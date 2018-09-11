@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import BrowserRouter from 'react-router'
-import logo from './logo.svg';
+import logo from './shuma.svg';
 import './App.css';
 
 class App extends Component {
@@ -24,8 +23,8 @@ class App extends Component {
           <h1 className="App-title">Heya! I AM SHUMBAHRI </h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          Yay!!! You made it to my Web site Welcome
+          </p>
       </div>
     );
   }
