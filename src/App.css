@@ -12,26 +12,29 @@ div.nav {
   background: repeating-linear-gradient(#111114, #00ffc9);
   height: 7rem;
 }
-.nav ul li {
+.nav li,a {
   color: white;
   display:  inline-flex;
   text-align: center;
+  text-decoration: none; 
   list-style: none;
   padding: 5px;
   margin: 5px;
 
 }
-
+ul {
+  position: absolute;
+  margin: 2rem 9rem;
+}
 li:hover {
-  background: rgba(120,120,120, 0.3);
-  border-radius: 2rem;
-
+  background: rgba(17, 255, 238, 0.47);
+  border-radius: 30% 1px;
 }
 .App-header {
   background:#ddd;
-  height: 50vw;
+  height: 25vw;
   color: black;
-  border-radius: 51rem 0rem 51rem 0rem;
+  border-radius: 1rem 0rem ;
 }
 
 .App-title {
