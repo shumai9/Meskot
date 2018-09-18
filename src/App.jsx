@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route} from 'react-router-dom'
 import logo from './shuma.svg';
-import './App.css';
+import Home from './components/home.jsx';
+import About from './components/about.jsx';
+import Timeline from './components/timeline.jsx';
+import Profile from './components/profile.jsx';
+import Contact from './components/contact.jsx'
+
+import './App.scss';
 
 class App extends Component {
   render() {
@@ -15,10 +21,7 @@ class App extends Component {
               <li><Link to={"/"}>HOME</Link></li>
               <li><Link to={"/about"}>ABOUT</Link></li>
               <li><Link to={"/timeline"}>TIMELINE</Link></li>
-              <li><Link to={"/education"}>EDUCATION</Link></li>
-              <li><Link to={"/experience"}>EXPERIENCE</Link></li>
-              <li><Link to={"/projects"}>PROJECTS</Link></li>
-              <li><Link to={"/blog"}>BLOG</Link></li>
+              <li><Link to={"/profile"}>PROFILE</Link></li>
               <li><Link to={"/contact"}>CONTACT</Link></li>
             </ul>
             </div>
@@ -27,16 +30,9 @@ class App extends Component {
         <div className="main route">
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="timeline" component={TIMELINE} />
-          <Route exact path="/education" component={EDUCATION} />
-          <Route exact path="/experience" component={EXPERIENCE} />
-          <Route exact path="projects" component={PROJECTS} />
-          <Route exact path="/blog" component={BLOG} />
-          <Route exact path="/contact" component={CONTACT} />
-
-
-          <p className="App-intro">Yay!!! You made it to my Web site Welcome</p>
-       
+          <Route exact path="/timeline" component={Timeline} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/profile" component={Profile} />  
         </div>
       </div>
     </Router>
