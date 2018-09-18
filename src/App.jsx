@@ -7,7 +7,7 @@ import Timeline from './components/timeline.jsx';
 import Profile from './components/profile.jsx';
 import Contact from './components/contact.jsx'
 
-import './App.scss';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -29,10 +29,10 @@ class App extends Component {
         </header>
         <div className="main route">
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/timeline" component={Timeline} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/profile" component={Profile} />  
+          <Route  path="/about" component={About} />
+          <Route  path="/timeline" component={Timeline} />
+          <Route  path="/contact" component={Contact} />
+          <Route  path="/profile" component={Profile} />  
         </div>
       </div>
     </Router>
