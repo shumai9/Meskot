@@ -8,36 +8,13 @@
   animation: App-logo-spin infinite 5s cubic-bezier(1,-0.09,.44,.93);
   height: 4.5rem;
 }
-div.nav {
-  background: repeating-linear-gradient(#111114, #00ffc9);
-  height: 7rem;
-  border: 1px salmon;
-}
-.nav li,a {
-  color: white;
-  display:  inline-flex;
-  text-align: center;
-  text-decoration: none; 
-  list-style: none;
-  padding: 5px;
-  margin: 5px;
 
-}
-ul {
-  position: absolute;
-  width: 100%;
-  margin: 1.6rem 0rem;
-}
-li:hover {
-  background: rgba(17, 255, 238, 0.47);
-  border-radius: 30% 1px;
-}
-.active {
+.active{
   background: rgba(128, 1, 167, 0.479);
 }
 .App-header {
   background:rgba(156, 255, 230, 0.931);
-  height: 25vw;
+  height: 125vw;
   color: black;
   border-radius: 1rem 0rem ;
 }
