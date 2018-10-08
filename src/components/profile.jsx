@@ -13,8 +13,11 @@ class Profile extends React.Component {
                 <menu>Profile</menu>
                 <ul>
                     <li>EDUCATION</li>
-                    <li>PROJECTS</li>
                 </ul>
+                <ol>
+                    <li>PROJECTS</li>
+                    <img src={'../public/assets/Berana.png'} alt="Berana" />
+                </ol>
             </div>
         )
     }

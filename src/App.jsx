@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router,Route} from 'react-router-dom'
-import logo from './shuma.svg';
+
 import Home from './components/home.jsx';
 import About from './components/about.jsx';
 import Timeline from './components/timeline.jsx';
@@ -12,15 +12,18 @@ import './App.css';
 
 class App extends Component {
   render() {
+
+  
     return (
       <Router>
       <div className="App">
+      <Nav/>          
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <Nav/>              
+                   
           <h1 className="App-title">Heya! I AM SHUMBAHRI </h1>
-          <canvas id="art">A</canvas>
+          
         </header>
+        
         <div className="main route">
           <Route exact path="/" component={Home} />
           <Route  path="/about" component={About} />

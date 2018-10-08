@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
  }
+
+ html {
+  scroll-behavior: smooth;
+}
  #root {
 	height: 100vh;
  	width: 100%;
-  background: #edcce9;
+  background:none;
  }

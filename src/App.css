@@ -1,22 +1,27 @@
 .App {
   text-align: center;
+  /* font-family: 'Petit Formal Script', cursive; */
+  
+  font-family: 'Bai Jamjuree', sans-serif;
 }
 
 .App-logo {
   float: left;
-  position: relative;
-  animation: App-logo-spin infinite 5s cubic-bezier(1,-0.09,.44,.93);
+  position: static;
+  margin: 2rem;
+  animation: App-logo-spin infinite 10s cubic-bezier(1,-0.09,.44,.93);
   height: 4.5rem;
 }
 
 .active{
   background: rgba(128, 1, 167, 0.479);
+ 
 }
 .App-header {
-  background:rgba(156, 255, 230, 0.931);
-  height: 125vw;
+  background: no-repeat  url('./components/massawa.jpg');
+  background-size: cover; 
+  height: 25rem;
   color: black;
-  border-radius: 1rem 0rem ;
 }
 
 .App-title {
@@ -31,4 +36,13 @@
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
   
+}
+.main {
+  background: no-repeat  url('./components/nef.jpg');
+  background-size: cover; 
+  height: 152vh;
+}
+
+#map{
+  height: 200px;
 }
