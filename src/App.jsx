@@ -16,14 +16,11 @@ class App extends Component {
   
     return (
       <Router>
-      <div className="App">
-      <Nav/>          
-        <header className="App-header">
-                   
-          <h1 className="App-title">Heya! I AM SHUMBAHRI </h1>
-          
+      <div className="App"> 
+        <header className="App-header">                
+          <h1 className="App-title"> WELCOME ! HOW CAN I HELP? </h1>      
         </header>
-        
+        <Nav />
         <div className="main route">
           <Route exact path="/" component={Home} />
           <Route  path="/about" component={About} />

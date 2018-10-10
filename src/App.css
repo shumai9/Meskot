@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  /* font-family: 'Petit Formal Script', cursive; */
+  font-family: 'Petit Formal Script', cursive;
   
   font-family: 'Bai Jamjuree', sans-serif;
 }
@@ -20,7 +20,7 @@
 .App-header {
   background: no-repeat  url('./components/massawa.jpg');
   background-size: cover; 
-  height: 25rem;
+  height: 35pc;
   color: black;
 }
 
@@ -40,7 +40,7 @@
 .main {
   background: no-repeat  url('./components/nef.jpg');
   background-size: cover; 
-  height: 152vh;
+  height: 60pc;
 }
 
 #map{

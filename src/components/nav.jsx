@@ -6,31 +6,31 @@ import './nav.css';
 class Nav extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-           stickyNav: false
-        }
-        this.handleScroll = this.handleScroll.bind(this);
-        this.handleSticky = this.handleSticky.bind(this);
+        this.state = {};
     }  
     
-    handleScroll = function (){
-        this.setState({ stickyNav: true });
+    handleScroll = () => {
+        this.setState({ scroll: window.scrollY});
     }
 
-    handleSticky = function() {
-        this.setState({ stickyNav: false });
-    }
-   
+    componentDidMount(){
+        const bar = document.querySelector('.nav');
+        
+        this.setState({ 
+            top: bar.offsetTop, height: bar.offsetHeight
+        });
+        
+        window.addEventListener('scroll', this.handleScroll );
        
-
+    }
     
-    render () {
-        // document.addEventListener("scroll", ()=> {
-        // window.scrollY > 50 ? this.handleScroll() : this.handleSticky();
-        // });
-    
+    componentDidUpdate() {
+        this.state.scroll > this.state.top ? document.body.style.paddingTop = `${this.state.height}px` : document.body.style.paddingTop = 0;
+    }
+       
+    render () {  
         return(
-            <div className={`nav ${this.state.stickyNav ? 'sticky' : ''} `}>
+            <div className={`nav ${ this.state.scroll > this.state.top ? "sticky" : "" }`}>
             <img src={logo} className="App-logo" alt="logo" />  
                  <ul>
                 <li><Link to={"/"}><h4>HOME</h4></Link></li>
