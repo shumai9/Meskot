@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Profile extends React.Component {
+class Projects extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -10,7 +10,7 @@ class Profile extends React.Component {
     render(){
         return(
             <div>
-                <menu>Profile</menu>
+                <menu>Projects List</menu>
                 <ul>
                     <li>EDUCATION</li>
                 </ul>
@@ -25,4 +25,4 @@ class Profile extends React.Component {
 }
 
 
-export default Profile;
+export default Projects;

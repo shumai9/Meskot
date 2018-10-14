@@ -5,44 +5,46 @@
   font-family: 'Bai Jamjuree', sans-serif;
 }
 
-.App-logo {
-  float: left;
-  position: static;
-  margin: 2rem;
-  animation: App-logo-spin infinite 10s cubic-bezier(1,-0.09,.44,.93);
-  height: 4.5rem;
-}
 
 .active{
   background: rgba(128, 1, 167, 0.479);
  
 }
+/*  */
+
 .App-header {
-  background: no-repeat  url('./components/massawa.jpg');
-  background-size: cover; 
-  height: 35pc;
+  background: no-repeat  url('./components/nef.jpg');
+  background-size: 100%; 
+  height: 34pc;
   color: black;
 }
 
 .App-title {
   font-size: 1.5em;
 }
-
-.App-intro {
-  font-size: large;
+.App-logo {
+  float: left;
+  position: relative;
+  animation: App-logo-spin infinite 10s cubic-bezier(1,-0.09,.44,.93);
+  height: 4.5rem;
+  margin: 15px;
 }
-
 @keyframes App-logo-spin {
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
   
 }
 .main {
-  background: no-repeat  url('./components/nef.jpg');
-  background-size: cover; 
-  height: 60pc;
+  background: no-repeat  url('./components/massawa.jpg');
+  background-size: 100%;
+  bottom: 0px; 
+  height: 150vh;
 }
-
+.footer {
+  display: block;
+  height: 25pc;
+  background: linear-gradient(black, grey);
+}
 #map{
   height: 200px;
 }
