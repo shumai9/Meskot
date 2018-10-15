@@ -37,6 +37,6 @@ nav a h4:focus {
 .sticky {
   top: 0;
   position: fixed;
-  background: rgba(4, 13, 31, 1);
+  background: rgb(105, 6, 72);
 }
 

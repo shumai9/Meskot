@@ -16,7 +16,7 @@ class Projects extends React.Component {
                 </ul>
                 <ol>
                     <li>PROJECTS</li>
-                    <img src={'../public/assets/Berana.png'} alt="Berana" />
+                    <img src={'./public/assets/Berana.png'} alt="Berana" />
                 </ol>
             </div>
         )
