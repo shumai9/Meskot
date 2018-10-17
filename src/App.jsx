@@ -18,17 +18,15 @@ class App extends Component {
     return (
       <Router>
       <div className="App"> 
-      
         <header className="App-header">  
-          <h1 className="App-title"> WELCOME!  </h1>
+          <h1 className="App-title"> I'm Shumai, full-stack web developer </h1>
+          
           <p id="intro">You reached Shumai's home page. That means you have come a very long way
             from the very vast and deep world wide web.
           </p>
-
         </header>
-        
-        <div className="main route row">
-        <Nav /> 
+        <Nav />        
+        <div className="main route">        
           <Route exact path="/" component={Home} />
           <Route  path="/about" component={About} />
           <Route  path="/timeline" component={Timeline} />
