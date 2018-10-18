@@ -2,7 +2,7 @@ import React from 'react';
 
 const Timeline = () => {
     return (
-        <div>
+        <div className="timeline">
              1984
         </div>
     );

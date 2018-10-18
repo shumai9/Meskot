@@ -1,4 +1,4 @@
-.App {
+.App, .App-title {
   text-align: center;
   font-family: 'Petit Formal Script', cursive;  
   font-family: 'Bai Jamjuree', sans-serif;
@@ -10,7 +10,8 @@
 }
 /*Header  */
 .App-header {
-  background: url('./components/nef.jpg');
+  position: relative;
+  background: url('./components/nef.jpg') 50% 50% no-repeat;
   background-size: cover;
   height: 40rem;
   width: 100%;
@@ -18,12 +19,13 @@
   
 }
 .App-header p {
-  position: relative;
-  top: 85%;
-  padding: 10px;
+  position: absolute;
+  top: 80%;
+  padding: 1%;
   font-size: large;
   background: #ccd8fa70;
   border-radius: 1rem;
+  width: 100%;
 }
 
 .App-title  {
@@ -51,12 +53,26 @@
   
 }
 .main {
+  position: relative;
   background: repeat,linear-gradient(transparent, #232c45 );
   width: 100%;
-  bottom: 0px; 
   height: 150vh;
   display: flex;
   flex-wrap: wrap;
+}
+/* style to target the route rendered elements*/
+.home,
+.about,
+.contact,
+.timeline,
+.projects {
+  position: absolute;
+  padding: 1%;
+  height: 200px;
+  background: rebeccapurple;
+  z-index: -1;
+  width: 100%;
+  padding: 3%;
 }
 .footer {
   display: block;
@@ -66,3 +82,19 @@
 #map{
   height: 200px;
 }
+/*experimental code*/
+/* figure {
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9) 
+  position: relative;
+  width: 100%;}
+   */
+/* iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+} */
+
+              

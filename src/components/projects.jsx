@@ -9,7 +9,7 @@ class Projects extends React.Component {
     }
     render(){
         return(
-            <div>
+            <div className="projects">
                 <menu>Projects List</menu>
                 <ul>
                     <li>EDUCATION</li>
