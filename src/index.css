@@ -6,7 +6,7 @@
 
  html {
   scroll-behavior: smooth;
-  width: 100vmax;
+  width: auto;
 }
  #root {
 	height: 100vh;
