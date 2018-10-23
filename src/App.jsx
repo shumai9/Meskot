@@ -8,6 +8,7 @@ import Projects from './components/projects.jsx';
 import Contact from './components/contact.jsx';
 import Nav from './components/nav.jsx';
 import Footer from './components/footer.jsx';
+import Option from './components/option.jsx';
 
 import './App.css';
 
@@ -18,12 +19,14 @@ class App extends Component {
     return (
       <Router>
       <div className="App"> 
-        <header className="App-header">  
-          <h1 className="App-title"> I'm Shumai, full-stack web developer </h1>
+        <header className="App-header">
+          
+          <h1 className="App-title"> Shumai's Site, ...Coming soon </h1>
           
           <p id="intro">You reached Shumai's home page. That means you have come a very long way
             from the very vast and deep world wide web.
           </p>
+          <Option/>
         </header>
         <Nav />        
         <div className="main route">        

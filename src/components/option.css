@@ -1,0 +1,23 @@
+.option nav{
+    display: block;
+    position: relative;
+    float: right;
+    width: 30%;
+    height: 60%;
+    background: rgba(0, 128, 0, 0.416);
+}
+
+.option img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 70px;
+    z-index: 10;
+  }
+  .option nav a:hover {
+      background: orange;
+  }
+  .option nav img{
+      display: none;
+  }

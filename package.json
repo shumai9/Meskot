@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "aws s3 sync build/ s3://meskot --region eu-west-2",
+    "deploy": "aws s3 sync build/ s3://shumai.co.uk --region eu-west-2",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

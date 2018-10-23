@@ -25,19 +25,19 @@ class Nav extends React.Component {
     }
     
     componentDidUpdate() {
-        this.state.scroll > this.state.top ? document.body.style.paddingTop = 
-        `${this.state.height}px` : document.body.style.paddingTop = 0;
+        this.state.scroll > this.state.top ? document.body.style.Top = 
+        `${this.state.height}px` : document.body.style.Top = 0;
     }
        
     render () {  
         return(
-            <nav className={`${ this.state.scroll > this.state.top ? "sticky" : "" }`}>
+            <nav className={`nav-bar ${ this.state.scroll > this.state.top ? "sticky" : "" }`}>
                 <Link to={"/"}><img src={logo} className="App-logo" alt="logo" /></Link>
-                <Link to={"/"}><h4>HOME</h4></Link>
-                <Link to={"/about"}><h4>ABOUT</h4></Link>
-                <Link to={"/timeline"}><h4>TIMELINE</h4></Link>
-                <Link to={"/projects"}><h4>PROJECTS</h4></Link>
-                <Link to={"/contact"}><h4>CONTACT</h4></Link>
+                <Link to={"/"}><h6>HOME</h6></Link>
+                <Link to={"/about"}><h6>ABOUT</h6></Link>
+                <Link to={"/timeline"}><h6>TIMELINE</h6></Link>
+                <Link to={"/projects"}><h6>PROJECTS</h6></Link>
+                <Link to={"/contact"}><h6>CONTACT</h6></Link>
             </nav>
         );
     }

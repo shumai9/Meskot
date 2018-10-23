@@ -1,4 +1,4 @@
-nav {
+.nav-bar  {
   position: absolute;
   top: 88%;
   height: auto;
@@ -10,28 +10,28 @@ a{
   outline: 0;
 }
 
-a h4 {
+a h6 {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   color: rgb(204, 250, 251);  
   margin: 15px;
   padding: 15px;
   font-family: Diplomata, cursive; 
 }
 
-nav a h4:hover { 
+nav a h6:hover { 
   background: rgba(171, 192, 192, 0.47);
   border-radius: 0.1rem;
   color: rgb(98, 250, 143);  
 } 
 
-nav a h4:focus {
+nav a h6:focus {
   background: linear-gradient(rgba(236, 34, 7, 0.35), transparent);
   height: 4rem;
   border-radius: 5%;
 }
 .sticky {
-  top: 0;
+  top:0;
   position: fixed;
   background: rgba(1, 2, 15, 0.589);
 }
