@@ -20,15 +20,13 @@ class App extends Component {
       <Router>
       <div className="App"> 
         <header className="App-header">
-          
+          <Nav />
           <h1 className="App-title"> Shumai's Site, ...Coming soon </h1>
-          
           <p id="intro">You reached Shumai's home page. That means you have come a very long way
-            from the very vast and deep world wide web.
+              from the very vast and deep world wide web.
           </p>
           <Option/>
-        </header>
-        <Nav />        
+        </header>                
         <div className="main route">        
           <Route exact path="/" component={Home} />
           <Route  path="/about" component={About} />
@@ -36,6 +34,7 @@ class App extends Component {
           <Route  path="/contact" component={Contact} />
           <Route  path="/projects" component={Projects} />  
         </div>
+        
        <Footer/>
       </div>
     </Router>

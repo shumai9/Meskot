@@ -1,31 +1,29 @@
-.nav-bar  {
+.nav-bar {
   position: absolute;
   top: 88%;
   height: auto;
   width: 100%;
-  
+  overflow: hidden;
+  z-index: 50;
 }
 a{
+  position: relative;
   text-decoration: none; 
   outline: 0;
-}
-
-a h6 {
-  display: inline-block;
-  text-align: left;
+  max-width: 100%;
+  padding: 3%;
+  display: inline;
   color: rgb(204, 250, 251);  
-  margin: 15px;
-  padding: 15px;
   font-family: Diplomata, cursive; 
 }
 
-nav a h6:hover { 
+nav a:not(:first-child):hover { 
   background: rgba(171, 192, 192, 0.47);
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
   color: rgb(98, 250, 143);  
 } 
 
-nav a h6:focus {
+nav a:not(:first-child):focus {
   background: linear-gradient(rgba(236, 34, 7, 0.35), transparent);
   height: 4rem;
   border-radius: 5%;
@@ -34,5 +32,12 @@ nav a h6:focus {
   top:0;
   position: fixed;
   background: rgba(1, 2, 15, 0.589);
+  height: 15vh;
+  width: 100%;
+  padding: 1%;
 }
-
+.sticky a:not(:first-child):hover { 
+  background: rgba(171, 192, 192, 0.47);
+  border-radius: 0.2rem;
+  color: rgb(98, 250, 143);  
+} 

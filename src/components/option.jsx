@@ -16,26 +16,29 @@ class Option extends React.Component {
     handleOpen = () => {
         this.setState({ open: true });
     }
-    
+    //fixed mem leak by inserting if conditional
     handleClose = () => { 
+        if (this.state.open){
             this.setState({ open: false });
+        }
     }
   
 
     render(){
         //the switch have to be inverted to offer user buton to open or close
         return(
-            this.state.open ? 
-            <div className="option close" >
-                <div onClick={this.handleClose}>
-                    <img id="x-arrow" src={Close} alt="open-icon"/>
+            
+                this.state.open ? 
+                <div className="option open" >
+                    <div onClick={this.handleClose}>
+                        <img id="x-arrow" src={Close} alt="open-icon"/>
+                    </div>
+                    <Nav/>
+                </div>            
+                :
+                <div className="option close" onClick={this.handleOpen}>
+                    <img id="heart" src={Open} alt="open-icon" />
                 </div>
-                <Nav />
-            </div>            
-            :
-            <div className="option open" onClick={this.handleOpen}>
-                <img id="heart" src={Open} alt="open-icon" />
-            </div>
             
         );
     }

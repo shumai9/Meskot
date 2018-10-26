@@ -1,23 +1,35 @@
+.option nav, img {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+.option a {
+    display: block;
+    padding: 5%;
+    margin: 2%;
+    max-width: 100%;
+}
+
 .option nav{
     display: block;
-    position: relative;
-    float: right;
-    width: 30%;
-    height: 60%;
-    background: rgba(0, 128, 0, 0.416);
+    width: 14rem;
+    height: auto;
+    background: rgba(26, 2, 2, 0.664);
+    z-index: 1;
 }
 
 .option img {
-    position: absolute;
-    right: 0;
-    top: 0;
     display: inline-block;
-    width: 70px;
-    z-index: 10;
+    width: 9%;
+    z-index: 5;
   }
   .option nav a:hover {
-      background: orange;
+     
   }
   .option nav img{
       display: none;
   }
+  .option nav img:hover {
+    background:red;
+}

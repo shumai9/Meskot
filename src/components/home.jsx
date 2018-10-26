@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Home = () => {
-    return( <div> This is home 
-        <p className="home">More content coming soon ...</p>
+    return( <div className="home"> This is home 
+        <p >More content coming soon ...</p>
     </div>);
 }
 

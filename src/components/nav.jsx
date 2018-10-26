@@ -9,6 +9,11 @@ class Nav extends React.Component {
         this.state = {};
     }  
     
+    handler = () => {
+        var content = document.querySelector('.main');       
+        content.scrollIntoView({behavior: "smooth"});
+    }
+
     handleScroll = () => {
         this.setState({ scroll: window.scrollY});
     }
@@ -31,13 +36,13 @@ class Nav extends React.Component {
        
     render () {  
         return(
-            <nav className={`nav-bar ${ this.state.scroll > this.state.top ? "sticky" : "" }`}>
+            <nav className={`nav-bar ${ this.state.scroll > this.state.top ? "sticky" : "" }`} onClick={this.handler}>
                 <Link to={"/"}><img src={logo} className="App-logo" alt="logo" /></Link>
-                <Link to={"/"}><h6>HOME</h6></Link>
-                <Link to={"/about"}><h6>ABOUT</h6></Link>
-                <Link to={"/timeline"}><h6>TIMELINE</h6></Link>
-                <Link to={"/projects"}><h6>PROJECTS</h6></Link>
-                <Link to={"/contact"}><h6>CONTACT</h6></Link>
+                <Link to={"/"}>HOME</Link>
+                <Link to={"/about"}>ABOUT</Link>
+                <Link to={"/timeline"}>TIMELINE</Link>
+                <Link to={"/projects"}>PROJECTS</Link>
+                <Link to={"/contact"}>CONTACT</Link>
             </nav>
         );
     }
