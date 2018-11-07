@@ -41,12 +41,15 @@
   color: rgb(199, 226, 45);
 }
 .App-logo {
-  float: left;
-  position: relative;
+  position: absolute;
+  left: 0px;
   animation: App-logo-spin infinite 10s cubic-bezier(1,-0.09,.44,.93);
-  height: 4.5rem;
-  padding: 5px;
+  width: 3rem;
+  margin-left: 2rem;
+  
 }
+
+  
 @keyframes App-logo-spin {
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
@@ -55,7 +58,7 @@
 .main {
   background: repeat,linear-gradient(transparent, #232c45 );
   width: 100%;
-  height: auto;
+  height: 150vh;
   display: flex;
   flex-wrap: wrap;
   ;
@@ -74,6 +77,12 @@
   width: 100%;
  
 }
+.masawino {
+  position: relative;
+  size: 50em;
+  border-radius: 1rem;
+}
+
 .footer {
   display: block;
   height: 25pc;

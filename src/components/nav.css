@@ -1,20 +1,27 @@
 .nav-bar {
   position: absolute;
   top: 88%;
-  height: auto;
+  height:12vh;
   width: 100%;
   overflow: hidden;
   z-index: 50;
 }
-a{
+
+.list {
   position: relative;
+  top: 1rem;
+  width: 100%;
+  
+}
+a:not(:first-child){ 
   text-decoration: none; 
   outline: 0;
   max-width: 100%;
-  padding: 3%;
   display: inline;
   color: rgb(204, 250, 251);  
   font-family: Diplomata, cursive; 
+  font-size: 15px;
+  padding: 1rem;
 }
 
 nav a:not(:first-child):hover { 
@@ -23,16 +30,17 @@ nav a:not(:first-child):hover {
   color: rgb(98, 250, 143);  
 } 
 
-nav a:not(:first-child):focus {
-  background: linear-gradient(rgba(236, 34, 7, 0.35), transparent);
+.list a:not(:first-child):focus {
+  background: linear-gradient(rgba(248, 41, 14, 0.424), transparent);
   height: 4rem;
   border-radius: 5%;
+  outline: 0;
 }
 .sticky {
   top:0;
   position: fixed;
   background: rgba(1, 2, 15, 0.589);
-  height: 15vh;
+  height: 10vh;
   width: 100%;
   padding: 1%;
 }
@@ -41,3 +49,12 @@ nav a:not(:first-child):focus {
   border-radius: 0.2rem;
   color: rgb(98, 250, 143);  
 } 
+#cross-arrow,
+#list-boat {
+
+  width: 50px;
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
