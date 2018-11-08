@@ -22,7 +22,7 @@
 
 .option img {
     display: inline-block;
-    width: 9%;
+    width: 6rem;
     z-index: 5;
   }
 
@@ -31,10 +31,10 @@
   }
   
 
-.list{
+  .option .list{
     display: block;
     position: relative;
-    text-align: center;
+    text-align: left;
     border-radius: 3% 10rem;
    
 }

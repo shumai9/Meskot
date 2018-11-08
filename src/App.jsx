@@ -7,7 +7,7 @@ import Projects from './components/projects.jsx';
 import Contact from './components/contact.jsx';
 import Nav from './components/nav.jsx';
 import Footer from './components/footer.jsx';
-import Option from './components/option.jsx';
+import Option from './components/option.jsx'; 
 import './App.css';
 
 class App extends Component {

@@ -23,20 +23,18 @@ class Option extends React.Component {
     
     render(){
         //the switch have to be inverted to offer user buton to open or close
-        return(
-            
-                this.state.open ? 
-                <div className="option open" >
-                    <div onClick={this.handleClose}>
-                        <img id="x-arrow" src={Close} alt="open-icon"/>
-                    </div>
-                   { this.state.open ? <Nav /> : null }
-                </div>            
-                :
-                <div className="option close" onClick={this.handleOpen} onChange = {this.props.unmountNav}>
-                    <img id="heart" src={Open} alt="open-icon" />
+        return(            
+            this.state.open ? 
+            <div className="option open" >
+                <div onClick={this.handleClose}>
+                    <img id="x-arrow" src={Close} alt="open-icon"/>
                 </div>
-            
+                { this.state.open ? <Nav /> : null }
+            </div>            
+            :
+            <div className="option close" onClick={this.handleOpen} onChange = {this.props.unmountNav}>
+                <img id="heart" src={Open} alt="open-icon" />
+            </div>
         );
     }
 }
