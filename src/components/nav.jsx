@@ -7,8 +7,8 @@ class Nav extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {};
-		}  
-	
+	}  
+
 	handler = () => {
 		var content = document.querySelector('.main');       
 		content.scrollIntoView({behavior: "smooth"});
@@ -20,19 +20,23 @@ class Nav extends React.Component {
 
 	componentDidMount(){
 		const bar = document.querySelector('nav');
-		
+
 		this.setState({ 
-				top: bar.offsetTop, height: bar.offsetHeight
+			top: bar.offsetTop, height: bar.offsetHeight
 		});
-		
+
 		window.addEventListener('scroll', this.handleScroll );
-			
 	}
-	
+
 	componentDidUpdate() {
 		this.state.scroll > this.state.top ? document.body.style.Top = 
 		`${this.state.height}px` : document.body.style.Top = 0;
 	}
+	componentWillUnmount () {
+		console.log('I am Nav unmounted');
+		window.removeEventListener('scroll', this.handleScroll );
+	} 
+	
 	render () {  
 		return(
 			<nav className={`nav-bar ${ this.state.scroll > this.state.top ? "sticky" : "" }`} >              
@@ -50,4 +54,3 @@ class Nav extends React.Component {
 }
 
 export default Nav;
-  

@@ -18,12 +18,9 @@ class Option extends React.Component {
     }
     //fixed mem leak by inserting if conditional
     handleClose = () => { 
-        if (this.state.open){
-            this.setState({ open: false });
-        }
+        this.setState({ open: false });
     }
-  
-
+    
     render(){
         //the switch have to be inverted to offer user buton to open or close
         return(
@@ -33,10 +30,10 @@ class Option extends React.Component {
                     <div onClick={this.handleClose}>
                         <img id="x-arrow" src={Close} alt="open-icon"/>
                     </div>
-                    <Nav/>
+                   { this.state.open ? <Nav /> : null }
                 </div>            
                 :
-                <div className="option close" onClick={this.handleOpen}>
+                <div className="option close" onClick={this.handleOpen} onChange = {this.props.unmountNav}>
                     <img id="heart" src={Open} alt="open-icon" />
                 </div>
             

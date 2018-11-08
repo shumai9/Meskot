@@ -14,7 +14,7 @@ class App extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      currentWidth: window.visualViewport.width
+      currentWidth: window.innerWidth
     };
   }
   handleDevice= () => {
@@ -24,18 +24,15 @@ class App extends Component {
     window.addEventListener ('resize', this.handleDevice ); 
   }
   
-   render() {
-    
+  render() {
     return (
       <Router>
-      <div className="App" > 
-        <header className="App-header">
-          
+        <div className="App" >
+          <header className="App-header">
           <h1 className="App-title"> Shumai's Site, ...Coming soon </h1>
           <p id="intro">You reached Shumai's home page. That means you have come a very long way
-              from the very vast and deep world wide web.
-          </p>
-           { this.state.currentWidth >= 960 ?  <Nav /> : <Option/> }  
+              from the very vast and deep world wide web.</p>
+              { this.state.currentWidth >= 960 ?  <Nav /> : <Option/> }
         </header>                
         <div className="main route">        
           <Route exact path="/" component={Home} />

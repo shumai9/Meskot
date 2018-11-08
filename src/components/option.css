@@ -6,8 +6,8 @@
 
 .option  a {
     display: block;
-    padding: 5%;
-    margin: 2%;
+    padding: 7%;
+    margin: 7%;
     max-width: 100%;
 }
 
@@ -15,8 +15,9 @@
     display: block;
     width: 14rem;
     height: auto;
-    background: rgba(26, 2, 2, 0.664);
+    background: rgba(26, 2, 2, 0.4);
     z-index: 1;
+    border-radius: 2rem 1rem;
 }
 
 .option img {
@@ -24,15 +25,16 @@
     width: 9%;
     z-index: 5;
   }
-  .option nav a:hover {
-     
-  }
+
   .option nav img{
       display: none;
   }
-  .option nav img:hover {
-    background:red;
-}
+  
+
 .list{
     display: block;
+    position: relative;
+    text-align: center;
+    border-radius: 3% 10rem;
+   
 }

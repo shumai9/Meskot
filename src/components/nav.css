@@ -1,17 +1,19 @@
 .nav-bar {
   position: absolute;
-  top: 88%;
-  height:12vh;
+  top: 90%;
+  height:10vh;
   width: 100%;
   overflow: hidden;
   z-index: 50;
+  background: rgba(184, 228, 119, 0.25);
+  text-align: right;
 }
 
 .list {
-  position: relative;
-  top: 1rem;
+  position: absolute;
+  top: 30%;
   width: 100%;
-  
+  background: none;
 }
 a:not(:first-child){ 
   text-decoration: none; 
@@ -21,7 +23,8 @@ a:not(:first-child){
   color: rgb(204, 250, 251);  
   font-family: Diplomata, cursive; 
   font-size: 15px;
-  padding: 1rem;
+  padding: 1%;
+  margin: 1%;
 }
 
 nav a:not(:first-child):hover { 
