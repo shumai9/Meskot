@@ -1,4 +1,4 @@
-.option nav, img {
+.option nav, img#heart, img#x-arrow {
     position: absolute;
     right: 1%;
     top: 1%;
@@ -20,7 +20,7 @@
     border-radius: 2rem 1rem;
 }
 
-.option img {
+.option #heart,.option #x-arrow {
     display: inline-block;
     width: 6rem;
     z-index: 5;

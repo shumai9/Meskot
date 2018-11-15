@@ -11,7 +11,7 @@
 /*Header  */
 .App-header {
   position: relative;
-  background: url('./components/nef.jpg') 50% 50% no-repeat;
+  background: url('/assets/nef.jpg') 50% 50% no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -65,7 +65,7 @@
 }
 /* style to target the route rendered elements*/
 .home,
-about,
+.about,
 .contact,
 .timeline,
 .projects {
@@ -87,6 +87,18 @@ about,
   display: block;
   height: 25pc;
   background: linear-gradient(grey,black );
+}
+div.menu:not(:frist-child){
+  display: grid;
+  width: 100;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+
+}
+div.img-container{
+  position: relative;
+  width: auto;
 }
 #map{
   height: 200px;

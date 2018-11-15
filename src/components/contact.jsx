@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
     return(
-        <contact className="contact">
+        <div className="contact">
             This is how get me
-        </contact>
+        </div>
     );
 }
 

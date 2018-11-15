@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-import logo from '../shuma.svg';
 import './nav.css';
 
 class Nav extends React.Component {
@@ -33,7 +32,7 @@ class Nav extends React.Component {
 		`${this.state.height}px` : document.body.style.Top = 0;
 	}
 	componentWillUnmount () {
-		console.log('I am Nav unmounted');
+		console.log('Nav unmounted');
 		window.removeEventListener('scroll', this.handleScroll );
 	} 
 	
@@ -41,7 +40,7 @@ class Nav extends React.Component {
 		return(
 			<nav className={`nav-bar ${ this.state.scroll > this.state.top ? "sticky" : "" }`} >              
 				<div className="list" onClick={this.handler}>
-					<Link to={"/"}><img src={logo} className="App-logo" alt="logo" /></Link>
+					<Link to={"/"}><img src="/assets/shuma.svg" className="App-logo" alt="logo" /></Link>
 					<Link to={"/"}>HOME</Link>
 					<Link to={"/about"}>ABOUT</Link>
 					<Link to={"/timeline"}>TIMELINE</Link>

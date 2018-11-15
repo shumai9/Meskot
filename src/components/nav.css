@@ -37,6 +37,7 @@ nav a:not(:first-child):hover {
   background: linear-gradient(rgba(248, 41, 14, 0.424), transparent);
   height: 4rem;
   border-radius: 5%;
+  border-bottom: 5px solid #c95f12;
   outline: 0;
 }
 .sticky {
