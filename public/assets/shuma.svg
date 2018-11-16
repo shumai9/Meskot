@@ -68,6 +68,7 @@
        sodipodi:end="5.83684"
        d="m 372.68917,238.88778 a 52.399693,76.525887 0 0 1 47.18196,-44.92221 52.399693,76.525887 0 0 1 47.80794,43.48773 l -47.26614,33.03407 z"
        style="fill:#374548;stroke-width:0.92612714" />
+       <!-- <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="90 50 50" repeatCount="indefinite" dur="1s"></animateTransform> -->
     <path
        d="M 520.5,78.1 Z"
        id="path8029"

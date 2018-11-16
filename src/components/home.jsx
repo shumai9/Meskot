@@ -10,38 +10,12 @@ class Home extends React.Component {
             lib: {}
         }
         this.login = () => {
-            fetch('https://accounts.google.com/o/oauth2/auth', {
-            method: "GET", 
-            headers: { 'Content-Type': 'application/json; charset=UTF-8' },
-            credentials: 'include'
-        })
+            return (
+                'https:'//accounts.google.com/o/oauth2/auth'
+            )
         }
     }
     
-
-    // componentDidMount() {
-    //     let data = {
-    //         "pageSize":"100"
-    //     }
-
-    //     fetch('https://photoslibrary.googleapis.com/v1/mediaItems', {
-    //         method: "GET", 
-    //         body: JSON.stringify(data),
-    //         headers: { 'Content-Type': 'application/json; charset=UTF-8', mode: 'cors' },
-    //         credentials: 'include'
-    //     })
-    //     .then(res => res.json())
-    //     .then((response) => {        
-    //         if(response.mediaItems) {
-    //             this.setState({
-    //             logedIn: true,
-    //             lib: response.mediaItems 
-    //             });  
-    //         } else {
-    //             console.log(response) 
-    //         }
-    //     });
-    // }
     
     render() {
         return(
