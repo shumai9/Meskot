@@ -1,10 +1,15 @@
 import React from 'react';
+import json from '../data/data.json';
+
+console.log('this is incoming', json.data.about);
+
+
 
 const About = () => {
     return(
-        <div className="about">         
+        <div className="about" onLoad={this.handleData}>         
             <img className="masawino"src="assets/massawa.jpg" alt="massawa" />
-            <p>My name is Shumai,Born in this beautiful port town <strong>Massawa</strong>, in native laguage 'Mtsi'wa'ea</p>
+            <p>{json.data.about}</p>
             
             {/* <figure>
                 <iframe src="https://www.youtube.com/embed/4Fqg43ozz7A"></iframe>
