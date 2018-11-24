@@ -10,6 +10,8 @@ import Footer from './components/footer.jsx';
 import Option from './components/option.jsx'; 
 import './App.css';
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 class App extends Component {
   constructor (props) {
     super(props);
@@ -31,6 +33,7 @@ class App extends Component {
   
   render() {
     return (
+      <MuiThemeProvider>
       <Router onClick={this.handleOpen}>
         <div className="App" >
           <header className="App-header">
@@ -50,6 +53,7 @@ class App extends Component {
        <Footer/>
       </div>
     </Router>
+    </MuiThemeProvider>
     );
   }
 }

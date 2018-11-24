@@ -4,11 +4,6 @@ import {PostData} from '../service/post_service';
 import {Redirect} from 'react-router-dom';
 import { GoogleLogout } from 'react-google-login';
 
-import TextField from '@material-ui/TextField';
-
-
-
-
 
 class Home extends React.Component {
     constructor(props) {
@@ -55,11 +50,7 @@ class Home extends React.Component {
         this.state.login ?
         <div className="home">
             <GoogleLogout buttonText="Logout" onLogoutSuccess={this.logout} >
-            </GoogleLogout>
-            <TextField
-      defaultValue="Default Value"
-      floatingLabelText="Floating Label Text"
-    />
+            </GoogleLogout>            
         </div> :
             <div className="home">
                 <h2 id="welcomeText">Home Shumai</h2>
