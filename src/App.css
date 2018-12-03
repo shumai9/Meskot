@@ -58,9 +58,10 @@
 .main {
   background: repeat,linear-gradient(transparent, #232c45 );
   width: 100%;
-  height: 150vh;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
   ;
 }
 /* style to target the route rendered elements*/
@@ -68,14 +69,16 @@
 .about,
 .contact,
 .timeline,
-.projects {
-  position: relative;
+.projects { 
+  position: absolute;
+  top: 42rem;
+  right: 0rem;   
+  left: 16rem;  
   padding: 10%;
-  height: auto;
-  width: 100%;
-  background: rgb(0, 107, 88);
-  width: 100%;
- 
+  height: 100vh;
+  width: 50vw;
+  width: auto;
+  background:sandybrown; 
 }
 .masawino {
   position: relative;
@@ -84,38 +87,72 @@
 }
 
 .footer {
+  position: relative;
   display: block;
   height: 25pc;
+  width: 100%;
+  bottom: -100rem;
   background: linear-gradient(grey,black );
 }
-div.menu:not(:frist-child){
-  display: grid;
-  width: 100;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 3rem;
+ div.projects{
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, auto);
+grid-gap: 20px 15px;
 
-}
+} 
 div.img-container{
   position: relative;
-  width: auto;
 }
 #map{
   height: 200px;
 }
-/*experimental code*/
-/* figure {
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9) 
-  position: relative;
-  width: 100%;}
-   */
-/* iframe {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-} */
+
+@media only screen and (max-width: 400px){
+  .option {
+    display: block;
+  }
+  .home,
+  .about,
+  .contact,
+  .timeline,
+  .projects { 
+    position: relative;
+    top: 42rem;
+    right: 0rem;
+    left: 0;
+    padding: 10%;
+    width: auto;
+    height: auto;
+    background: sandybrown;
+  }
+}
+ /* For tablets: */
+@media only screen and (min-width: 401px) and (max-width: 960px){
+  
+   .option {
+    display: block;
+  }
+  body {
+    background: orchid;
+  }
+}
+
+@media only screen and (min-width: 961px){
+  /* For desktop: */
+  /* .option {
+    display: none;
+  } */
+
+  body {
+    background: #181725;
+  }
+}
+
+@media only screen and (max-width: 960px){
+  nav .list a:not(:first-child) {
+    display: block;
+  }
+}
 
               

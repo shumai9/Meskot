@@ -38,7 +38,7 @@ class Nav extends React.Component {
 	
 	render () {  
 		return(
-			<nav className={`nav-bar ${ this.state.scroll > this.state.top ? "sticky" : "" }`} >              
+			<nav className={`nav-bar ${ this.state.scroll > this.state.top ? "sticky" : "" }`} >        
 				<div className="list" onClick={this.handler}>
 					<Link to={"/"}><img src="/assets/shuma.svg" className="App-logo" alt="logo" /></Link>
 					<Link to={"/"}>HOME</Link>

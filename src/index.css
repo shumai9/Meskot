@@ -6,22 +6,43 @@
 
  html {
   scroll-behavior: smooth;
-  width: auto;
+  width: 100%; 
 }
  #root {
 	height: 100vh;
- 	width: 100%;
-  background:none;
+ 	background:none;
+ }
+ aside {
+  position: absolute;
+  z-index: 1;
+  height: 92rem;
+  background: lavenderblush;
+  top: 42rem;
  }
 
-img, video, canvas {
-  max-width: 100%;
+ div.LI-profile-badge {
+  position: sticky;
+  z-index: 1;
+  opacity: 0.8;
+  top: 4.2rem;;
+ }
+ .LI-profile-pic-container {
+   background-image: none;
+
+ }
+ .LI-badge-container-vertical-light {
+   width: 15%;
+ }
+
+img, video, canvas,iframe {
+  width:25rem;
 }
  /* mobile phones first*/
 @media only screen and (min-width: 100px) and (max-width: 400px) {
-    body { 
+   body { 
     background: gold;
   }
+  
   .option {
     display: block;
   }
@@ -32,38 +53,8 @@ img, video, canvas {
     position: relative;
     top: 18%;
   }
-}
-
-@media only screen and (max-width: 400px){
-  .option {
-    display: block;
-    
-  }
-}
- /* For tablets: */
-@media only screen and (min-width: 401px) and (max-width: 960px){
-  
-   .option {
-    display: block;
-  }
-  body {
-    background: orchid;
-  }
-}
-
-@media only screen and (min-width: 961px){
-  /* For desktop: */
-  /* .option {
-    display: none;
-  } */
-
-  body {
-    background: rgb(112, 149, 218);
-  }
-}
-
-@media only screen and (max-width: 960px){
-  nav .list a:not(:first-child) {
-    display: block;
+  aside {
+    width:auto;
+    top:26rem;
   }
 }

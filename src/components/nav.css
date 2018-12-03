@@ -7,6 +7,7 @@
   z-index: 50;
   background: rgba(12, 154, 211, 0.25);
   text-align: right;
+  padding: 1%;
 }
 
 .list {
@@ -33,7 +34,7 @@ nav a:not(:first-child):hover {
   color: rgb(98, 250, 143);  
 } 
 
-.list a:not(:first-child):focus {
+.list a:not(:first-child):focus{
   background: linear-gradient(rgba(248, 41, 14, 0.424), transparent);
   height: 4rem;
   border-radius: 5%;
@@ -55,10 +56,13 @@ nav a:not(:first-child):hover {
 } 
 #cross-arrow,
 #list-boat {
-
   width: 50px;
   display: inline;
   position: absolute;
   right: 0;
   top: 10px;
+}
+.active {
+  background-color: #fdaa12;
+  border-radius: 5rem;
 }
