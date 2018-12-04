@@ -17,8 +17,7 @@ class About extends React.Component{
             this.setState({
                 loaded: true,
                 bucket: data.slice()
-            });
-            console.log(this.state.bucket);            
+            });           
         })
         .catch(e => {
             console.log('problem ->', e)

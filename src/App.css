@@ -1,3 +1,15 @@
+.App {
+  display: grid;
+  grid-template-columns: repeat(1, 100vh);
+  grid-template-rows: repeat(2, 100vh);
+  grid-gap: 0.50em;
+}
+.App-header,
+.main,
+.footer
+{
+  grid-column: 1 / span 3;
+}
 .App, .App-title {
   text-align: center;
   font-family: 'Petit Formal Script', cursive;  
@@ -15,8 +27,6 @@
   background-size: cover;
   height: 100vh;
   width: 100%;
- 
-  
 }
 .App-header p {
   position: absolute;
@@ -40,29 +50,23 @@
   opacity: 1;
   color: rgb(199, 226, 45);
 }
+/*Logo animation*/
 .App-logo {
   position: absolute;
   left: 0px;
   animation: App-logo-spin infinite 10s cubic-bezier(1,-0.09,.44,.93);
   width: 3rem;
-  margin-left: 2rem;
-  
+  margin-left: 2rem; 
 }
-
-  
 @keyframes App-logo-spin {
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
-  
 }
+/*main content */
 .main {
-  background: repeat,linear-gradient(transparent, #232c45 );
   width: 100%;
-  height: auto;
   display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-  ;
+  flex-wrap: nowrap;
 }
 /* style to target the route rendered elements*/
 .home,
@@ -70,61 +74,66 @@
 .contact,
 .timeline,
 .projects { 
-  position: absolute;
-  top: 42rem;
-  right: 0rem;   
-  left: 16rem;  
-  padding: 10%;
-  height: 100vh;
-  width: 50vw;
-  width: auto;
-  background:sandybrown; 
+  padding: 4%;
+  text-align: left;
+  width: 100%;
+  height: auto;
 }
+/*Image style*/
 .masawino {
   position: relative;
-  size: 50em;
+  width: auto;
   border-radius: 1rem;
 }
+div.projects{
 
+}
 .footer {
-  position: relative;
+  position: absolute;
   display: block;
   height: 25pc;
-  width: 100%;
-  bottom: -100rem;
   background: linear-gradient(grey,black );
-}
- div.projects{
-  max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(3, auto);
-grid-gap: 20px 15px;
-
-} 
-div.img-container{
-  position: relative;
-}
-#map{
-  height: 200px;
+  bottom: -80rem;
+  width: 100vw;
 }
 
-@media only screen and (max-width: 400px){
+/***Responsive design***/
+ /* mobile phones first*/
+@media only screen and (min-width: 100px) and (max-width: 400px) {
+   body { 
+    background: gold;
+  }
   .option {
     display: block;
   }
-  .home,
-  .about,
-  .contact,
-  .timeline,
-  .projects { 
+  .nav-bar {
+    height: 12vh;
+  }
+  .App-header p,.App-title {
     position: relative;
-    top: 42rem;
-    right: 0rem;
-    left: 0;
-    padding: 10%;
-    width: auto;
-    height: auto;
-    background: sandybrown;
+    top: 18%;
+  }
+  div.LI-profile-badge {
+    position: relative;
+    width: 100vw;
+  }
+  .main{
+    display: block;
+    width: 100vw;
+  }
+}
+  
+@media only screen and (max-width: 400px){
+  .option {
+    display: block;
+  }  
+  div.LI-profile-badge {
+    position: relative;
+    width: 100vw;
+  }
+  .main{
+    display: block;
+    width: 100vw;
   }
 }
  /* For tablets: */
@@ -135,6 +144,7 @@ div.img-container{
   }
   body {
     background: orchid;
+    width: 100vw;
   }
 }
 
@@ -145,7 +155,7 @@ div.img-container{
   } */
 
   body {
-    background: #181725;
+    background: #a7ffc4;
   }
 }
 

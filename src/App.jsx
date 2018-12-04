@@ -34,26 +34,34 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-      <Router onClick={this.handleOpen}>
-        <div className="App" >
-          <header className="App-header">
-          <h1 className="App-title"> Shumai's Site, ...Coming soon </h1>
-          <p id="intro">You reached Shumai's home page. That means you have come a very long way
-              from the very vast and deep world wide web.</p>
-              { this.state.currentWidth >= 960 ?  <Nav /> : <Option 
-              handleClose = {this.handleClose} handleOpen = {this.handleOpen}/> }
-        </header>                
-        <div className="main route">        
-          <Route exact path="/" component={Home} />
-          <Route  path="/about" component={About} />
-          <Route  path="/timeline" component={Timeline} />
-          <Route  path="/contact" component={Contact} />
-          <Route  path="/projects" component={Projects} />  
-        </div>        
-       <Footer/>
-      </div>
-    </Router>
-    </MuiThemeProvider>
+        <Router onClick={this.handleOpen}>
+          <div className="App" >
+            <header className="App-header">
+              <h1 className="App-title"> Shumai's Site, ...Coming soon </h1>
+              <p id="intro">You reached Shumai's home page. That means you have come a very long way
+                  from the very vast and deep world wide web.</p>
+                  { this.state.currentWidth >= 960 ?  <Nav /> : <Option 
+                  handleClose = {this.handleClose} handleOpen = {this.handleOpen}/> }
+            </header>                
+            <div className="main route">
+              <aside>
+                <div class="LI-profile-badge"  data-version="v1" data-size="medium" 
+                  data-locale="en_US" data-type="vertical" data-theme="light" 
+                  data-vanity="soazd1">
+                  <a class="LI-simple-link" href='https://uk.linkedin.com/in/soazd1?
+                  trk=profile-badge'> Shumai Araya</a>
+                </div>
+              </aside>        
+              <Route exact path="/" component={Home} />
+              <Route  path="/about" component={About} />
+              <Route  path="/timeline" component={Timeline} />
+              <Route  path="/contact" component={Contact} />
+              <Route  path="/projects" component={Projects} />  
+            </div>       
+            <Footer/>
+          </div>
+        </Router>
+      </MuiThemeProvider>
     );
   }
 }

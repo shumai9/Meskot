@@ -2,59 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- }
+}
 
- html {
+html {
   scroll-behavior: smooth;
   width: 100%; 
 }
- #root {
-	height: 100vh;
- 	background:none;
- }
- aside {
-  position: absolute;
-  z-index: 1;
-  height: 92rem;
-  background: lavenderblush;
-  top: 42rem;
- }
+aside {
+  padding: 1%;
+}
 
- div.LI-profile-badge {
+div.LI-profile-badge {
   position: sticky;
-  z-index: 1;
-  opacity: 0.8;
-  top: 4.2rem;;
- }
- .LI-profile-pic-container {
-   background-image: none;
-
- }
- .LI-badge-container-vertical-light {
-   width: 15%;
- }
+  top: 10%;
+}
 
 img, video, canvas,iframe {
   width:25rem;
-}
- /* mobile phones first*/
-@media only screen and (min-width: 100px) and (max-width: 400px) {
-   body { 
-    background: gold;
-  }
-  
-  .option {
-    display: block;
-  }
-  .nav-bar {
-    height: 12vh;
-  }
-  .App-header p,.App-title {
-    position: relative;
-    top: 18%;
-  }
-  aside {
-    width:auto;
-    top:26rem;
-  }
 }
