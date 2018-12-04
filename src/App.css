@@ -75,6 +75,7 @@
 .timeline,
 .projects { 
   padding: 4%;
+  padding-top: 7%;
   text-align: left;
   width: 100%;
   height: auto;
@@ -110,7 +111,7 @@ div.projects{
     height: 12vh;
   }
   .App-header p,.App-title {
-    position: relative;
+    position: absolute;
     top: 18%;
   }
   div.LI-profile-badge {

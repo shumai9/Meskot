@@ -1,10 +1,40 @@
-{ "data": 
-    {
-        "about":"My name is Shumai born in this beautiful port town  Massawa in native laguage pronounced as 'Mtsi'wa'ea. I have leaved the till I was 3 yeads old and later when I studied. Life then took me to Asmara the capital city and to Nefasit where I spent most of my childhood and teenage years",
-        "home":"Home is where heart is",
-        "contact":"Dita@shumai.co.uk",
-        "footer":"copy right 2018",
-        "projects":"List of projects",
-        "timeline":"Born 1984, Achieved diploma in Marine MicroBiology 2008,Achieved Degree in MBT, Fled in 2013"
-    }
+{
+  "about": 
+  {
+    "intro": "My name is Shumai born in this beautiful port town Massawa.",
+    "body": {
+      "bio": "I develop web sites and web applications using industry grade technologies and practicies. I am passionate about learning new technology and expanding my knowlege. I'm married and a proud father, I enjoy listening to jazz while programming, Love to draw and paint and can cook. ",
+      "edu": "Originally trained as Marine Biotechnology  at University of Asmara, later on switched a career to follow my passion in Tech and the world of programming.",
+      "reason": "I have always being enthusiastic and passionate about technology having found an opportunity to follow what makes me happy"
+    },
+    "current": "I am trained Full Stack Web Developer living close to London",
+    "status": "Home is where heart is"
+  },
+  "home": {
+    "intro": "Home is where heart is",
+    "body": "Home is where heart is",
+    "catch": "Home is where heart is",
+    "img": "url"
+  },
+  "contact": {
+    "email": "Home is where heart is",
+    "tel": "Home is where heart is",
+    "links": "Home is where heart is"
+  },
+  "projects": {
+    "rights": "copy right 2018",
+    "objective":"",
+    "list":"[ hilina, banta, go-chef]",
+    "duration": "Home is where heart is"
+  },
+  "timeline": {
+    "career": "Where you at now",
+    "places": "[]",
+    "date": "[]"
+  },
+  "footer": {
+    "rights": "copy right 2018",
+    "feeds":"",
+    "quotes": "Home is where heart is"
+  }
 }

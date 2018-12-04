@@ -12,24 +12,14 @@ class Home extends React.Component {
         }
     }
  
-    componentDidMount() {
-        fetch("./shumay.txt")
-        .then((reponse) => reponse.text())
-        .then((data) => {
-            this.setState({
-                loaded: true,
-                bucket: data.split('. ')
-            })
-                       
-        })
-        .catch(e => {
-            console.log('problem ->', e)
-        })
-    }
     render (){
         return (
             <div className="home">
-                <p>{this.state.bucket}</p>   
+                {/* <p>{this.state.bucket}</p> */}
+                <p>{json.home.intro}</p>
+                <p>{json.home.body}</p>
+                <p>{json.home.catch}</p>
+                <p>{json.home.img}</p> 
             </div>
         );
     }
