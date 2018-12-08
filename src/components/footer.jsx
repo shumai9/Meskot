@@ -1,12 +1,14 @@
 import React from 'react';
-import json from '../data/data.json';
 
-const Footer = ()=> {
-  return (
-    <div className="footer">For more details 
-    <p>{json.footer.rights}</p>
-    </div>
-  )
+class Footer extends React.Component {
+  render() {
+    return (
+      <div className="footer" >
+        <em>For more details </em>
+        <p>{this.props.data.rights}</p>
+      </div>
+    )
+  }
 };
 
 export default Footer;

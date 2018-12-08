@@ -86,7 +86,7 @@ class App extends Component {
                 }
               /> 
             </div>       
-            <Footer/>
+            <Footer data={json.projects} />
           </div>
         </Router>
       </MuiThemeProvider>

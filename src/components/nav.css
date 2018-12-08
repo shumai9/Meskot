@@ -29,7 +29,7 @@ a:not(:first-child){
 }
 
 nav a:not(:first-child):hover { 
-  background: rgba(171, 192, 192, 0.47);
+  /* background: rgba(171, 192, 192, 0.47); */
   border-radius: 0.2rem;
   color: rgb(98, 250, 143);  
 } 

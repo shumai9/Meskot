@@ -11,13 +11,12 @@ html {
 }
 /***Style for LinkedIn badge***/
 aside {
-  padding: 1%;
+  padding: 7% 1%;
   width: auto;
 }
 
 div.LI-profile-badge .LI-badge-container.vertical.light {
   position: sticky;
-  top: 10%;
   -webkit-box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
   -moz-box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
   box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
@@ -32,3 +31,6 @@ div.LI-profile-pic-container img {
 img, video, canvas,iframe {
   width:25rem;
 }
+div p {
+  padding: 15px;
+} 
