@@ -1,14 +1,19 @@
 import React from 'react';
-import json from '../data/data.json';
 
 
-const Contact = () => {
-    return(
-        <div className="contact">
-            This is how you can reach me.
-            {json.data.footer}
-        </div>
-    );
+class Contact extends React.Component {
+    render () {
+        return(
+            <div className="contact">
+            <p>Email: {this.props.data.email}</p>
+            <p>Tel:{this.props.data.tel}</p>
+            <p>links: 
+                <a href={`${this.props.data.links}`} target="_blank"> Shumai's Github</a> 
+            </p>
+
+            </div>
+        );
+    }
 }
 
 export default Contact;

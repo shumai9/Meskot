@@ -1,17 +1,16 @@
 import React from 'react';
 
 class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    edu : {}
-    }
-  }
   
   render(){
     return(
       <div className="projects menu">
+      <p>{this.props.data.rights}</p>
+      <p>{this.props.data.duration}</p>
+      <p>{this.props.data.objective}</p>
+      <p>{this.props.data.list} </p>
         <h5>PROJECTS</h5>
+        
         <img src="/assets/aws.png" alt="Berana" />
         <div className="img-container">
           <img src="/assets/Berana.png" alt="Berana" />

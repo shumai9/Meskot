@@ -1,7 +1,6 @@
 {
-  "about": 
-  {
-    "intro": "My name is Shumai born in this beautiful port town Massawa.",
+  "about": {
+    "intro": "I was born in this beautiful port town Massawa.",
     "body": {
       "bio": "I develop web sites and web applications using industry grade technologies and practicies. I am passionate about learning new technology and expanding my knowlege. I'm married and a proud father, I enjoy listening to jazz while programming, Love to draw and paint and can cook. ",
       "edu": "Originally trained as Marine Biotechnology  at University of Asmara, later on switched a career to follow my passion in Tech and the world of programming.",
@@ -11,19 +10,19 @@
     "status": "Home is where heart is"
   },
   "home": {
-    "intro": "Home is where heart is",
-    "body": "Home is where heart is",
+    "intro": "Welcome Home is where heart is",
+    "body": "This is where I plan to put stories",
     "catch": "Home is where heart is",
     "img": "url"
   },
   "contact": {
-    "email": "Home is where heart is",
-    "tel": "Home is where heart is",
-    "links": "Home is where heart is"
+    "email": "shumx@shumai.co.uk",
+    "tel": "00-297-123-401",
+    "links": "http://github.com/shumai9"
   },
   "projects": {
     "rights": "copy right 2018",
-    "objective":"",
+    "objective":"To master React and Vue ",
     "list":"[ hilina, banta, go-chef]",
     "duration": "Home is where heart is"
   },

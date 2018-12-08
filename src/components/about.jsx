@@ -1,5 +1,4 @@
 import React from 'react';
-import json from '../data/data.json';
 
 class About extends React.Component{
     constructor() {
@@ -13,13 +12,14 @@ class About extends React.Component{
     render(){
     return(
         <div className="about">
-        <h1>{json.about.intro} </h1>         
+        <h1> Hi, I'm Shumai</h1>
+        <p>{this.props.data.intro}</p>         
             <img className="masawino"src="assets/massawa.jpg" alt="massawa" />
            <p>
-            {json.about.body.bio} 
-            {json.about.body.edu}
+            {this.props.data.body.bio} 
+            {this.props.data.body.edu}
             </p>
-           <p>{json.about.body.reason} </p>
+           <p>{this.props.data.body.reason} </p>
                                      
         </div>
         );

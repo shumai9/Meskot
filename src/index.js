@@ -6,6 +6,6 @@ import registerServiceWorker from './registerServiceWorker';
 import mediaQueryList from './mediaQueryList';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App  />, document.getElementById('root'));
 registerServiceWorker();
 console.log(mediaQueryList);

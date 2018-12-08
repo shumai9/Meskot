@@ -7,18 +7,21 @@ import Projects from './components/projects.jsx';
 import Contact from './components/contact.jsx';
 import Nav from './components/nav.jsx';
 import Footer from './components/footer.jsx';
-import Option from './components/option.jsx'; 
+import Option from './components/option.jsx';
+import json from './data/data.json'; 
 import './App.css';
-
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+
 
 class App extends Component {
   constructor (props) {
     super(props);
-    
     this.state = {
       currentWidth: window.innerWidth
     };
+    
+    console.warn('From app',);
     this.handleDevice = () => {
       this.setState ({currentWidth: window.innerWidth});
     }
@@ -34,7 +37,7 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Router onClick={this.handleOpen}>
+        <Router >
           <div className="App" >
             <header className="App-header">
               <h1 className="App-title"> Shumai's Site, ...Coming soon </h1>
@@ -43,20 +46,45 @@ class App extends Component {
                   { this.state.currentWidth >= 960 ?  <Nav /> : <Option 
                   handleClose = {this.handleClose} handleOpen = {this.handleOpen}/> }
             </header>                
-            <div className="main route">
+            <div className="main route" data={json.home}>
               <aside>
-                <div class="LI-profile-badge"  data-version="v1" data-size="medium" 
+                <div className="LI-profile-badge"  data-version="v1" data-size="medium" 
                   data-locale="en_US" data-type="vertical" data-theme="light" 
                   data-vanity="soazd1">
-                  <a class="LI-simple-link" href='https://uk.linkedin.com/in/soazd1?
+                  <a className="LI-simple-link" href='https://uk.linkedin.com/in/soazd1?
                   trk=profile-badge'> Shumai Araya</a>
                 </div>
               </aside>        
-              <Route exact path="/" component={Home} />
-              <Route  path="/about" component={About} />
-              <Route  path="/timeline" component={Timeline} />
-              <Route  path="/contact" component={Contact} />
-              <Route  path="/projects" component={Projects} />  
+                <Route 
+                  exact path="/"
+                  render= {
+                    (props) => <Home {...props} data={json.home} /> 
+                  }
+                />
+              <Route  
+                path="/about"
+                render={
+                  (props) => <About {...props} data={json.about}/>
+                } 
+              />
+              <Route
+                path="/timeline"
+                render={
+                  (props) => <Timeline {...props} data={json.timeline} />
+                }
+              />
+              <Route
+                path="/contact"
+                render={
+                  (props) => <Contact {...props} data={json.contact} />
+                }
+              />
+              <Route
+                path="/projects"
+                render={
+                  (props) => < Projects {...props} data={json.projects}/>
+                }
+              /> 
             </div>       
             <Footer/>
           </div>

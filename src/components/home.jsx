@@ -1,5 +1,4 @@
 import React from 'react';
-import json from '../data/data.json';
 
 
 class Home extends React.Component {
@@ -16,10 +15,10 @@ class Home extends React.Component {
         return (
             <div className="home">
                 {/* <p>{this.state.bucket}</p> */}
-                <p>{json.home.intro}</p>
-                <p>{json.home.body}</p>
-                <p>{json.home.catch}</p>
-                <p>{json.home.img}</p> 
+                <p>{this.props.data.intro}</p>
+                <p>{this.props.data.body}</p>
+                <p>{this.props.data.catch}</p>
+                <p>{this.props.data.img}</p> 
             </div>
         );
     }

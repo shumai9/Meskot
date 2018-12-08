@@ -12,9 +12,12 @@ aside {
   padding: 1%;
 }
 
-div.LI-profile-badge {
+div.LI-profile-badge,.LI-badge-container.vertical.light {
   position: sticky;
   top: 10%;
+  -webkit-box-shadow: 2px 5px 30px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 5px 30px 9px rgba(0,0,0,0.75);
+  box-shadow: 2px 5px 30px 9px rgba(0,0,0,0.75);
 }
 
 img, video, canvas,iframe {
