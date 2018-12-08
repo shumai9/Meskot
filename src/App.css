@@ -75,7 +75,6 @@
 .timeline,
 .projects { 
   padding: 4%;
-  padding-top: 7%;
   text-align: left;
   width: 100%;
   height: auto;
@@ -93,11 +92,9 @@ div.projects{
 
 }
 .footer {
-  position: absolute;
   display: block;
-  height: 25pc;
+  height: 10pc;
   background: linear-gradient(grey,black );
-  bottom: -80rem;
   width: 100vw;
 }
 
@@ -115,7 +112,7 @@ div.projects{
   }
   .App-header p,.App-title {
     position: absolute;
-    top: 18%;
+   
   }
   div.LI-profile-badge {
     position: relative;
@@ -124,31 +121,30 @@ div.projects{
   .main{
     display: block;
     width: 100vw;
+  }
+  div.App,
+  .App-header,
+  .main,
+  .footer {
+    grid: auto-flow dense / 30%;
+    grid-gap: none;
+  }
+  .masawino {
+    width:100%;
   }
 }
   
-@media only screen and (max-width: 400px){
-  .option {
-    display: block;
-  }  
-  div.LI-profile-badge {
-    position: relative;
-    width: 100vw;
-  }
-  .main{
-    display: block;
-    width: 100vw;
-  }
-}
  /* For tablets: */
 @media only screen and (min-width: 401px) and (max-width: 960px){
-  
-   .option {
+  .option {
     display: block;
   }
   body {
     background: orchid;
     width: 100vw;
+  }
+  .masawino {
+    width:100%;
   }
 }
 

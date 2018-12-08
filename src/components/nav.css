@@ -57,9 +57,9 @@ nav a:not(:first-child):hover {
   border-radius: 0.2rem;
   color: rgb(98, 250, 143);  
 } 
+
 #cross-arrow,
 #list-boat {
-  width: 50px;
   display: inline;
   position: absolute;
   right: 0;

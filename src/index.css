@@ -2,22 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 150%; 
 }
 
 html {
   scroll-behavior: smooth;
   width: 100%; 
 }
+/***Style for LinkedIn badge***/
 aside {
   padding: 1%;
+  width: auto;
 }
 
-div.LI-profile-badge,.LI-badge-container.vertical.light {
+div.LI-profile-badge .LI-badge-container.vertical.light {
   position: sticky;
   top: 10%;
-  -webkit-box-shadow: 2px 5px 30px 9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 5px 30px 9px rgba(0,0,0,0.75);
-  box-shadow: 2px 5px 30px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
+  box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
+  border-radius: 2%;
+}
+div.LI-profile-pic-container img {
+  -webkit-box-shadow:0px 0px 22px 0px #048fc5;
+  -moz-box-shadow:0px 0px 22px 0px #048fc5;
+  box-shadow: 0px 0px 22px 0px #048fc5;
 }
 
 img, video, canvas,iframe {
