@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 150%; 
+  line-height: 150%;
 }
 
 html {
   scroll-behavior: smooth;
-  width: 100%; 
+  width: 100%;
 }
+
 /***Style for LinkedIn badge***/
 aside {
   padding: 7% 1%;
@@ -17,20 +18,25 @@ aside {
 
 div.LI-profile-badge .LI-badge-container.vertical.light {
   position: sticky;
-  -webkit-box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
-  -moz-box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
-  box-shadow: 0 0 2em 0em rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 2em 0em rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 2em 0em rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 2em 0em rgba(0, 0, 0, 0.75);
   border-radius: 2%;
 }
 div.LI-profile-pic-container img {
-  -webkit-box-shadow:0px 0px 22px 0px #048fc5;
-  -moz-box-shadow:0px 0px 22px 0px #048fc5;
+  -webkit-box-shadow: 0px 0px 22px 0px #048fc5;
+  -moz-box-shadow: 0px 0px 22px 0px #048fc5;
   box-shadow: 0px 0px 22px 0px #048fc5;
 }
-
-img, video, canvas,iframe {
-  width:25rem;
+img.LI-profile-pic {
+  width: auto;
+}
+img,
+video,
+canvas,
+iframe {
+  width: 25rem;
 }
 div p {
   padding: 15px;
-} 
+}

@@ -1,5 +1,3 @@
-var mediaQueryList = window.matchMedia("(orientation: portrait");
+var mediaQueryList = window.matchMedia('(orientation: portrait');
 
 export default mediaQueryList;
-
-

@@ -1,24 +1,23 @@
 .App {
   display: grid;
-  grid-template-columns: repeat(1, 100vh);
-  grid-template-rows: repeat(2, 100vh);
-  grid-gap: 0.50em;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 0.5em;
 }
 .App-header,
 .main,
-.footer
-{
+.footer {
   grid-column: 1 / span 3;
 }
-.App, .App-title {
+.App,
+.App-title {
   text-align: center;
-  font-family: 'Petit Formal Script', cursive;  
+  font-family: 'Petit Formal Script', cursive;
   font-family: 'Bai Jamjuree', sans-serif;
 }
 
-.active{
+.active {
   background: rgba(128, 1, 167, 0.479);
- 
 }
 /*Header  */
 .App-header {
@@ -38,29 +37,35 @@
   width: 100%;
 }
 
-.App-title  {
+.App-title {
+  position: relative;
+  top: 45%;
+  left: 33.33%;
+  right: 33.33%;
   color: rgb(148, 98, 97);
   font-size: 2.5rem;
-  position: relative;
-  top: 71%;
-  left: -1;
   opacity: 0.3;
+  font-family: Diplomata, cursive;
 }
-.App-title:hover{ 
+.App-title:hover {
   opacity: 1;
-  color: rgb(199, 226, 45);
+  color: rgb(47, 43, 1);
 }
 /*Logo animation*/
 .App-logo {
   position: absolute;
   left: 0px;
-  animation: App-logo-spin infinite 10s cubic-bezier(1,-0.09,.44,.93);
+  animation: App-logo-spin infinite 10s cubic-bezier(1, -0.09, 0.44, 0.93);
   width: 3rem;
-  margin-left: 2rem; 
+  margin-left: 2rem;
 }
 @keyframes App-logo-spin {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(360deg); }
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 /*main content */
 .main {
@@ -73,42 +78,46 @@ div.home,
 div.about,
 div.contact,
 div.timeline,
-div.projects { 
+div.projects {
   padding: 7% 2%;
   text-align: left;
   width: 100%;
   height: auto;
+  background: #ccd8fa70;
 }
+
 /*Image style*/
 .masawino {
-  float: left;
+  float: right;
   padding: 2px;
   margin: 2%;
   position: relative;
   width: auto;
   border-radius: 2rem;
-  -webkit-box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.85);
-  -moz-box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.85);
-  box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.85);
+  -webkit-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
+  box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
 }
-div.projects{
- 
+.img-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.menu{
+.menu {
   height: 100vh;
 }
 .footer {
   text-align: center;
   display: block;
   height: 10pc;
-  background: linear-gradient(grey,black );
-  width:100%;
+  background: linear-gradient(grey, black);
+  width: 100%;
 }
 
 /***Responsive design***/
- /* mobile phones first*/
+/* mobile phones first*/
 @media only screen and (min-width: 10px) and (max-width: 400px) {
-   body { 
+  body {
     background: rgba(177, 102, 102, 0.48);
   }
   .option {
@@ -117,15 +126,15 @@ div.projects{
   .nav-bar {
     height: 12vh;
   }
-  .App-header p,.App-title {
+  .App-header p,
+  .App-title {
     position: absolute;
-   
   }
   div.LI-profile-badge {
     position: relative;
     width: 100vw;
   }
-  .main{
+  .main {
     display: block;
     width: 100vw;
   }
@@ -137,12 +146,12 @@ div.projects{
     grid-gap: none;
   }
   .masawino {
-    width:100%;
+    width: 100%;
   }
 }
-  
- /* For tablets: */
-@media only screen and (min-width: 401px) and (max-width: 960px){
+
+/* For tablets: */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   .option {
     display: block;
   }
@@ -150,11 +159,18 @@ div.projects{
     background: rgb(134, 106, 106);
   }
   .masawino {
-    width:100%;
+    width: 100%;
+  }
+  div.App,
+  .App-header,
+  .main,
+  .footer {
+    grid: auto-flow dense / 100%;
+    grid-gap: none;
   }
 }
 
-@media only screen and (min-width: 961px){
+@media only screen and (min-width: 961px) {
   /* For desktop: */
   /* .option {
     display: none;
@@ -165,10 +181,8 @@ div.projects{
   }
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 960px) {
   nav .list a:not(:first-child) {
     display: block;
   }
 }
-
-              

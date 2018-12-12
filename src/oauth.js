@@ -2,12 +2,12 @@ import history from '../history';
 import auth0 from 'auth0-js';
 import { OAUTH_CONFIG } from './auth0-variables';
 
- class Oauth extends React.Component {
+class Oauth extends React.Component {
   auth0 = new auth0.WebAuth({
     domain: OAUTH_CONFIG.domain,
     clientID: OAUTH_CONFIG.clientId,
     redirectUri: OAUTH_CONFIG.callbackUrl,
-    audience: `https://${OAUTH_CONFIG.domain}/userinfo`,    
+    audience: `https://${OAUTH_CONFIG.domain}/userinfo`,
     responseType: 'token id_token',
     scope: 'openid'
   });
@@ -38,7 +38,9 @@ import { OAUTH_CONFIG } from './auth0-variables';
 
   setSession(authResult) {
     // Set the time that the access token will expire at
-    let expiresAt = JSON.stringify((authResult.expiresIn * 1000) + new Date().getTime());
+    let expiresAt = JSON.stringify(
+      authResult.expiresIn * 1000 + new Date().getTime()
+    );
     localStorage.setItem('access_token', authResult.accessToken);
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('expires_at', expiresAt);
@@ -56,7 +58,7 @@ import { OAUTH_CONFIG } from './auth0-variables';
   }
 
   isAuthenticated() {
-    // Check whether the current time is past the 
+    // Check whether the current time is past the
     // access token's expiry time
     let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
     return new Date().getTime() < expiresAt;
