@@ -43,10 +43,7 @@ class App extends Component {
               <h1 className="App-title">
                 Hey, I'm <br /> Shumai
               </h1>
-              <p id="intro">
-                You reached Shumai's home page. That means you have come a very
-                long way from the very vast and deep world wide web.
-              </p>
+              <p id="intro">Welcome! to my site</p>
               {this.state.currentWidth >= 960 ? (
                 <Nav />
               ) : (

@@ -1,27 +1,20 @@
 .nav-bar {
   position: absolute;
-  top: 90%;
-  height: 10vh;
+  top: 91%;
   width: 100%;
-  overflow: hidden;
   z-index: 50;
-  background: rgba(12, 154, 211, 0.25);
   text-align: right;
-  padding: 1%;
 }
-
 .list {
   position: absolute;
   top: 30%;
   width: 100%;
-  background: none;
 }
 a:not(:first-child) {
   text-decoration: none;
   outline: 0;
   max-width: 100%;
   display: inline;
-  color: rgb(204, 250, 251);
   font-family: Diplomata, cursive;
   font-size: 15px;
   padding: 1%;
@@ -44,10 +37,9 @@ nav a:not(:first-child):hover {
 .sticky {
   top: 0;
   position: fixed;
-  background: rgba(1, 2, 15, 0.589);
-  height: 10vh;
+  background: var(--app-bg-color);
+  height: 8vh;
   width: 100%;
-  padding: 1%;
   -webkit-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
   box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
@@ -56,6 +48,9 @@ nav a:not(:first-child):hover {
   background: rgba(171, 192, 192, 0.47);
   border-radius: 0.2rem;
   color: rgb(98, 250, 143);
+}
+.list a {
+  color: var(--app-color-b);
 }
 
 #cross-arrow,

@@ -10,9 +10,12 @@ html {
   width: 100%;
 }
 
+body {
+  background: var(--app-theme);
+}
 /***Style for LinkedIn badge***/
 aside {
-  padding: 7% 1%;
+  padding: 0% 1%;
   width: auto;
 }
 
@@ -28,6 +31,7 @@ div.LI-profile-pic-container img {
   -moz-box-shadow: 0px 0px 22px 0px #048fc5;
   box-shadow: 0px 0px 22px 0px #048fc5;
 }
+
 img.LI-profile-pic {
   width: auto;
 }

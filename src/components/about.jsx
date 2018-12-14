@@ -11,14 +11,12 @@ class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <h1>Hi, I'm Shumai</h1>
-        <h2>{this.props.data.intro}</h2>
+        <h1>{this.props.data.intro}</h1>
+        <h2>WHY do What I do..?</h2>
         <img className="masawino" src="assets/massawa.jpg" alt="massawa" />
         <div>
-          <p>
-            {this.props.data.body.bio}
-            {this.props.data.body.edu}
-          </p>
+          <p>{this.props.data.body.bio}</p>
+          <p>{this.props.data.body.edu}</p>
         </div>
         <div>
           <p>{this.props.data.body.reason} </p>

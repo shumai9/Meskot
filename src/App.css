@@ -1,3 +1,19 @@
+/**********************************\
+/*         *** Site Theme ***       \ 
+/************************************/
+:root {
+  --app-color: rgb(204, 250, 251);
+  --app-color-b: #445673;
+  --app-theme: #1b4d71b3;
+  --app-bg-color: #fce6ba;
+  --header-bg-img: url('/assets/nef.jpg') 50% 50% no-repeat;
+  --title-style: Diplomata, cursive;
+  --title-color: #30ff7b;
+  --para-style: 'Petit Formal Script', cursive;
+  --esp-style: 'Bai Jamjuree', sans-serif;
+  --content-bg: linear-gradient(#daffd7, transparent);
+  --footer-bg: linear-gradient(#031d2f, #002);
+}
 .App {
   display: grid;
   grid-template-columns: repeat(1, auto);
@@ -10,16 +26,13 @@
   grid-column: 1 / span 3;
 }
 .App,
-.App-title {
+.App-title,
+#intro {
   text-align: center;
-  font-family: 'Petit Formal Script', cursive;
-  font-family: 'Bai Jamjuree', sans-serif;
 }
-
-.active {
-  background: rgba(128, 1, 167, 0.479);
-}
-/*Header  */
+/**********************************\
+/*            Header                \ 
+/************************************/
 .App-header {
   position: relative;
   background: url('/assets/nef.jpg') 50% 50% no-repeat;
@@ -32,24 +45,23 @@
   top: 80%;
   padding: 0.78%;
   font-size: large;
-  background: #ccd8fa70;
   border-radius: 1rem;
   width: 100%;
 }
 
 .App-title {
   position: relative;
-  top: 45%;
-  left: 33.33%;
-  right: 33.33%;
-  color: rgb(148, 98, 97);
-  font-size: 2.5rem;
-  opacity: 0.3;
-  font-family: Diplomata, cursive;
+  top: 66%;
+  color: var(--title-color);
 }
 .App-title:hover {
   opacity: 1;
-  color: rgb(47, 43, 1);
+  background: no-repeat 32% 70%
+    url(https://avatars1.githubusercontent.com/u/31252151?s=400&u=8e58e501860b2f24ace46b855576a972d2d7edb9&v=4);
+  background-size: contain;
+}
+#intro {
+  color: var(--app-color);
 }
 /*Logo animation*/
 .App-logo {
@@ -67,33 +79,37 @@
     transform: rotateY(360deg);
   }
 }
-/*main content */
+
+/**********************************\
+/          *** Main Content ***     \ 
+/************************************/
 .main {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
 }
 /* style to target the route rendered elements*/
-div.home,
-div.about,
-div.contact,
-div.timeline,
-div.projects {
+.home,
+.about,
+.contact,
+.timeline,
+.projects {
   padding: 7% 2%;
   text-align: left;
   width: 100%;
-  height: auto;
-  background: #ccd8fa70;
+  background: var(--content-bg);
 }
 
+/**********************************\
+/          Image style......        \ 
+/************************************/
 /*Image style*/
 .masawino {
   float: right;
   padding: 2px;
-  margin: 2%;
   position: relative;
   width: auto;
-  border-radius: 2rem;
+  border-radius: 1%;
   -webkit-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
   box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
@@ -103,40 +119,43 @@ div.projects {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.menu {
-  height: 100vh;
-}
+
+/**********************************\
+/          *** Footer ***           \ 
+/************************************/
 .footer {
   text-align: center;
   display: block;
-  height: 10pc;
-  background: linear-gradient(grey, black);
+  height: 15rem;
   width: 100%;
+  background: var(--footer-bg, #ccc);
+  color: rgb(69, 255, 129);
+  padding: 15% 0%;
 }
 
-/***Responsive design***/
-/* mobile phones first*/
-@media only screen and (min-width: 10px) and (max-width: 400px) {
-  body {
-    background: rgba(177, 102, 102, 0.48);
-  }
+/**********************************\
+/   ***Responsive design***         \ 
+/************************************/
+/****************************
+  ***mobile phones first*** 
+  ****************************/
+
+@media only screen and (min-width: 10px) and (max-width: 500px) {
   .option {
     display: block;
   }
   .nav-bar {
     height: 12vh;
   }
-  .App-header p,
-  .App-title {
-    position: absolute;
-  }
+
   div.LI-profile-badge {
     position: relative;
-    width: 100vw;
+    /*width: 100vw;*/
   }
   .main {
     display: block;
     width: 100vw;
+    flex-wrap: wrap;
   }
   div.App,
   .App-header,
@@ -148,16 +167,29 @@ div.projects {
   .masawino {
     width: 100%;
   }
+  div.sticky {
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+  }
+  .about h1,
+  h2 {
+    font-size: medium;
+  }
+  img {
+    width: 100%;
+  }
 }
 
-/* For tablets: */
+/****************
+  ***For Tablets***
+  ****************************/
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .option {
     display: block;
   }
-  body {
-    background: rgb(134, 106, 106);
-  }
+
   .masawino {
     width: 100%;
   }
@@ -168,21 +200,37 @@ div.projects {
     grid: auto-flow dense / 100%;
     grid-gap: none;
   }
-}
-
-@media only screen and (min-width: 961px) {
-  /* For desktop: */
-  /* .option {
-    display: none;
-  } */
-
-  body {
-    background: #a7ffc4;
+  img {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 960px) {
+/****************
+  ***For Desktops***
+  ****************************/
+@media only screen and (min-width: 961px) {
+}
+
+@media only all and (max-width: 960px) {
   nav .list a:not(:first-child) {
     display: block;
   }
+}
+
+h1,
+h2 {
+  font-family: var(--title-style);
+}
+h3 {
+  font-family: var(--esp-style);
+}
+p,
+img,
+i,
+em {
+  font-family: var(--para-style);
+}
+aside a,
+li {
+  font-family: var(--para-style);
 }
