@@ -1,14 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './nav.css';
 
 class Nav extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      name: ''
+    };
   }
-
   srollToView = e => {
+    e.preventDefault();
     var content = document.querySelector('.main');
     content.scrollIntoView({ behavior: 'smooth' });
   };
@@ -45,14 +47,24 @@ class Nav extends React.Component {
         }`}
       >
         <div className="list" onClick={this.srollToView}>
-          <Link to={'/'}>
+          <NavLink to="/home">
             <img src="/assets/shuma.svg" className="App-logo" alt="logo" />
-          </Link>
-          <Link to={'/'}>HOME</Link>
-          <Link to={'/about'}>ABOUT</Link>
-          <Link to={'/timeline'}>TIMELINE</Link>
-          <Link to={'/projects'}>PROJECTS</Link>
-          <Link to={'/contact'}>CONTACT</Link>
+          </NavLink>
+          <NavLink exact to={'/home'}>
+            HOME
+          </NavLink>
+          <NavLink exact to={'/about'}>
+            ABOUT
+          </NavLink>
+          <NavLink exact to={'/timeline'}>
+            TIMELINE
+          </NavLink>
+          <NavLink exact to={'/projects'}>
+            PROJECTS
+          </NavLink>
+          <NavLink exact to={'/contact'}>
+            CONTACT
+          </NavLink>
         </div>
       </nav>
     );

@@ -77,7 +77,7 @@ class App extends Component {
               </aside>
               <Route
                 exact
-                path="/"
+                path="/home"
                 render={props => (
                   <Home {...props} data={json.home} onScroll={this.setTitle} />
                 )}

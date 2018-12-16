@@ -126,7 +126,7 @@
 .footer {
   text-align: center;
   display: block;
-  height: 15rem;
+  height: 12rem;
   width: 100%;
   background: var(--footer-bg, #ccc);
   color: rgb(69, 255, 129);
