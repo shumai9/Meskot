@@ -55,6 +55,7 @@ class App extends Component {
             </header>
             <div className="main route">
               <aside>
+                <h2>More of me</h2>
                 <div
                   className="LI-profile-badge"
                   data-version="v1"
@@ -75,6 +76,7 @@ class App extends Component {
                   </a>
                 </div>
               </aside>
+              <Route exact path="/" render={null} />
               <Route
                 exact
                 path="/home"

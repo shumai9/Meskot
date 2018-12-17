@@ -13,6 +13,10 @@
   --esp-style: 'Bai Jamjuree', sans-serif;
   --content-bg: linear-gradient(#daffd7, transparent);
   --footer-bg: linear-gradient(#031d2f, #002);
+  /*font size*/
+  --largefont: 25px;
+  --mediumfont: 16px;
+  --smallfont: 12px;
 }
 .App {
   display: grid;
@@ -42,7 +46,7 @@
 }
 .App-header p {
   position: absolute;
-  top: 80%;
+  top: 84%;
   padding: 0.78%;
   font-size: large;
   border-radius: 1rem;
@@ -52,14 +56,15 @@
 .App-title {
   position: relative;
   top: 66%;
+  font-size: 30px;
   color: var(--title-color);
 }
-.App-title:hover {
+/*.App-title:hover {
   opacity: 1;
   background: no-repeat 32% 70%
     url(https://avatars1.githubusercontent.com/u/31252151?s=400&u=8e58e501860b2f24ace46b855576a972d2d7edb9&v=4);
   background-size: contain;
-}
+}*/
 #intro {
   color: var(--app-color);
 }
@@ -107,7 +112,6 @@
 .masawino {
   float: right;
   padding: 2px;
-  position: relative;
   width: auto;
   border-radius: 1%;
   -webkit-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
@@ -126,11 +130,11 @@
 .footer {
   text-align: center;
   display: block;
-  height: 12rem;
+  height: auto;
   width: 100%;
   background: var(--footer-bg, #ccc);
   color: rgb(69, 255, 129);
-  padding: 15% 0%;
+  padding: 5% 0%;
 }
 
 /**********************************\
@@ -140,7 +144,12 @@
   ***mobile phones first*** 
   ****************************/
 
-@media only screen and (min-width: 10px) and (max-width: 500px) {
+@media only screen and (min-width: 100px) and (max-width: 300px) {
+  h1,
+  h2,
+  p {
+    font-size: var(--smallfont);
+  }
   .option {
     display: block;
   }
@@ -172,10 +181,6 @@
     -moz-box-shadow: unset;
     box-shadow: unset;
   }
-  .about h1,
-  h2 {
-    font-size: medium;
-  }
   img {
     width: 100%;
   }
@@ -185,7 +190,12 @@
   ***For Tablets***
   ****************************/
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 301px) and (max-width: 960px) {
+  h1,
+  h2,
+  p {
+    font-size: var(--mediumfont);
+  }
   .option {
     display: block;
   }
@@ -209,11 +219,12 @@
   ***For Desktops***
   ****************************/
 @media only screen and (min-width: 961px) {
-}
-
-@media only all and (max-width: 960px) {
-  nav .list a:not(:first-child) {
-    display: block;
+  nav a:not(:first-child) {
+    display: inline;
+  }
+  h1,
+  h2 {
+    font-size: var(--largefont);
   }
 }
 

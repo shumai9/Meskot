@@ -22,13 +22,11 @@ a:not(:first-child) {
 }
 
 nav a:not(:first-child):hover {
-  /* background: rgba(171, 192, 192, 0.47); */
   border-radius: 0.2rem;
   color: rgb(98, 250, 143);
 }
 
-.list a:not(:first-child):focus,
-.active {
+.list a.active:not(:first-child) {
   background: linear-gradient(rgba(248, 41, 14, 0.424), transparent);
   height: 4rem;
   border-radius: 5%;

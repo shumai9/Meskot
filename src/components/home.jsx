@@ -12,8 +12,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        {/* <p>{this.state.bucket}</p> */}
-        <p>{this.props.data.intro}</p>
+        <h1>{this.props.data.intro}</h1>
         <p>{this.props.data.body}</p>
         <p>{this.props.data.catch}</p>
         <img src={this.props.data.img} alt="flora" />

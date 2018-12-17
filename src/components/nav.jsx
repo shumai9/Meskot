@@ -47,7 +47,7 @@ class Nav extends React.Component {
         }`}
       >
         <div className="list" onClick={this.srollToView}>
-          <NavLink to="/home">
+          <NavLink exact to="/">
             <img src="/assets/shuma.svg" className="App-logo" alt="logo" />
           </NavLink>
           <NavLink exact to={'/home'}>
