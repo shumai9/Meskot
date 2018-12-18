@@ -99,7 +99,7 @@
 .contact,
 .timeline,
 .projects {
-  padding: 7% 2%;
+  padding: 1% 4%;
   text-align: left;
   width: 100%;
   background: var(--content-bg);
@@ -144,7 +144,7 @@
   ***mobile phones first*** 
   ****************************/
 
-@media only screen and (min-width: 100px) and (max-width: 300px) {
+@media only screen and (min-width: 10px) and (max-width: 650px) {
   h1,
   h2,
   p {
@@ -190,7 +190,7 @@
   ***For Tablets***
   ****************************/
 
-@media only screen and (min-width: 301px) and (max-width: 960px) {
+@media only screen and (min-width: 651px) and (max-width: 960px) {
   h1,
   h2,
   p {

@@ -16,11 +16,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentWidth: window.innerWidth
+      currentWidth: window.innerWidth,
+      open: false
     };
-    console.warn('From app');
     this.handleDevice = () => {
       this.setState({ currentWidth: window.innerWidth });
+    };
+    this.handleOpen = () => {
+      this.setState({ open: true });
+    };
+    this.handleClose = () => {
+      if (this.state.open) {
+        this.setState({ open: false });
+      }
     };
     this.setTitle = this.setTitle.bind(this);
   }
@@ -32,13 +40,14 @@ class App extends Component {
     window.addEventListener('resize', this.handleDevice);
   }
   componentDidCatch(error) {
-    console.log('loged error', error.message);
+    console.log('logged error', error.message);
   }
   render() {
+    const open = this.state.open;
     return (
       <MuiThemeProvider>
         <Router>
-          <div className="App">
+          <div className="App" onClick={this.handleClose}>
             <header className="App-header">
               <h1 className="App-title">
                 Hey, I'm <br /> Shumai
@@ -48,6 +57,7 @@ class App extends Component {
                 <Nav />
               ) : (
                 <Option
+                  open={open}
                   handleClose={this.handleClose}
                   handleOpen={this.handleOpen}
                 />
@@ -125,7 +135,7 @@ class App extends Component {
                 )}
               />
             </div>
-            <Footer data={json.projects} />
+            <Footer data={json.footer} />
           </div>
         </Router>
       </MuiThemeProvider>

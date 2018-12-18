@@ -5,28 +5,33 @@ import './option.css';
 class Option extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      open: false
-    };
-    this.handleOpen = () => {
-      this.setState({ open: true });
-    };
-    this.handleClose = () => {
-      this.setState({ open: false });
-    };
+    this.openList = this.openList.bind(this);
+    this.closeList = this.closeList.bind(this);
+  }
+  openList() {
+    this.props.handleOpen();
+  }
+  closeList() {
+    this.props.handleClose();
   }
 
   render() {
-    return this.state.open ? (
+    const open = this.props.open;
+    return open ? (
       <div className="option open">
-        <div onClick={this.handleClose}>
-          <img id="heart" src="/assets/option-close.svg " alt="open-icon" />
+        <div onClick={this.closeList}>
+          <img id="heart" src="/assets/option-close.svg " alt="" />
         </div>
-        {this.state.open ? <Nav /> : null}
+        {open ? <Nav /> : null}
       </div>
     ) : (
-      <div className="option close" onClick={this.handleOpen}>
-        <img id="x-arrow" src="/assets/option-open.svg" alt="open-icon" />
+      <div className="option close">
+        <img
+          id="x-arrow"
+          src="/assets/option-open.svg"
+          alt=""
+          onClick={this.openList}
+        />
       </div>
     );
   }
