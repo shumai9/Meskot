@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 150%;
+  font-size-adjust: var(--mediumfont);
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  background: var(--app-theme);
+  background: var(--palegreen);
 }
 /***Style for LinkedIn badge***/
 aside {
@@ -23,9 +24,9 @@ div.LI-profile-badge {
 }
 div.LI-profile-badge .LI-badge-container.vertical.light {
   position: sticky;
-  -webkit-box-shadow: 0 0 2em 0em rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 2em 0em rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 2em 0em rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: var(--app-shadow);
+  -moz-box-shadow: var(--app-shadow);
+  box-shadow: var(--app-shadow);
   border-radius: 2%;
   z-index: -1;
 }

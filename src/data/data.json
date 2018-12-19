@@ -20,13 +20,17 @@
   "contact": {
     "email": "shumx@shumai.co.uk",
     "tel": "00-297-123-401",
-    "links": "http://github.com/shumai9"
+    "links": [
+      "http://github.com/shumai9",
+      "https://www.linkedin.com/in/soazd1/"
+    ],
+    "follow": ["https://twitter.com/ocbayes"]
   },
   "projects": {
-    "rights": "copy right 2018",
-    "objective": "To master React and Vue ",
+    "rights": "",
+    "objective": "Projects worked to master skills",
     "list": ["hilina", "banta", "go-chef"],
-    "duration": "Home is where heart is"
+    "duration": "Time is relative. "
   },
   "timeline": {
     "career": "Web Development",

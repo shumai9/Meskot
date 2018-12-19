@@ -2,21 +2,26 @@
 /*         *** Site Theme ***       \ 
 /************************************/
 :root {
-  --app-color: rgb(204, 250, 251);
-  --app-color-b: #445673;
-  --app-theme: #1b4d71b3;
-  --app-bg-color: #fce6ba;
-  --header-bg-img: url('/assets/nef.jpg') 50% 50% no-repeat;
-  --title-style: Diplomata, cursive;
-  --title-color: #30ff7b;
+  /*text color*/
+  --bright-green-color: rgb(204, 250, 251);
+  --pale-dark-color: #445673;
+  /*background*/
+  --palegreen: #fbfbfbb3;
+  --nav-sandycolor: #fce6ba;
+  --orange-color: #c95f12;
+  --header-img: url('/assets/nef.jpg') 50% 50% no-repeat;
+  /*text color*/
+  --text-style: Diplomata, cursive;
+  --text-color: #30ff7b;
   --para-style: 'Petit Formal Script', cursive;
   --esp-style: 'Bai Jamjuree', sans-serif;
-  --content-bg: linear-gradient(#daffd7, transparent);
   --footer-bg: linear-gradient(#031d2f, #002);
   /*font size*/
-  --largefont: 25px;
+  --largefont: 24px;
   --mediumfont: 16px;
-  --smallfont: 12px;
+  --smallfont: 11px;
+  /*shadow*/
+  --app-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 .App {
   display: grid;
@@ -39,7 +44,7 @@
 /************************************/
 .App-header {
   position: relative;
-  background: url('/assets/nef.jpg') 50% 50% no-repeat;
+  background: var(--header-img);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -56,17 +61,18 @@
 .App-title {
   position: relative;
   top: 66%;
-  font-size: 30px;
-  color: var(--title-color);
+  font-size: var(--largefont);
+  color: var(--text-color);
 }
-/*.App-title:hover {
+/*.App-text:hover {
   opacity: 1;
   background: no-repeat 32% 70%
     url(https://avatars1.githubusercontent.com/u/31252151?s=400&u=8e58e501860b2f24ace46b855576a972d2d7edb9&v=4);
   background-size: contain;
 }*/
 #intro {
-  color: var(--app-color);
+  color: var(--bright-green-color);
+  font-size: var(--mediumfont);
 }
 /*Logo animation*/
 .App-logo {
@@ -102,7 +108,7 @@
   padding: 1% 4%;
   text-align: left;
   width: 100%;
-  background: var(--content-bg);
+  background: var(--palegreen);
 }
 
 /**********************************\
@@ -110,13 +116,15 @@
 /************************************/
 /*Image style*/
 .masawino {
+  align-content: center;
   float: right;
-  padding: 2px;
+  margin: 3rem 0;
+  padding: 1px;
   width: auto;
-  border-radius: 1%;
-  -webkit-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
-  -moz-box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
-  box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.85);
+  border-radius: 1rem;
+  -webkit-box-shadow: var(--app-shadow);
+  -moz-box-shadow: var(--app-shadow);
+  box-shadow: var(--app-shadow);
 }
 .img-container {
   display: flex;
@@ -125,7 +133,7 @@
 }
 
 /**********************************\
-/          *** Footer ***           \ 
+/          *** Foote(--r ***           \ 
 /************************************/
 .footer {
   text-align: center;
@@ -133,8 +141,13 @@
   height: auto;
   width: 100%;
   background: var(--footer-bg, #ccc);
-  color: rgb(69, 255, 129);
+  color: var(--text-color);
   padding: 5% 0%;
+}
+div.footer p {
+  font-family: var(--text-style);
+  font-size: var(--smallfont);
+  color: var(--text-color);
 }
 
 /**********************************\
@@ -147,11 +160,18 @@
 @media only screen and (min-width: 10px) and (max-width: 650px) {
   h1,
   h2,
-  p {
+  h3,
+  h4,
+  p,
+  a {
     font-size: var(--smallfont);
   }
+
   .option {
     display: block;
+  }
+  .option a {
+    font-size: var(--smallfont);
   }
   .nav-bar {
     height: 12vh;
@@ -193,8 +213,15 @@
 @media only screen and (min-width: 651px) and (max-width: 960px) {
   h1,
   h2,
-  p {
+  h3,
+  h4 {
     font-size: var(--mediumfont);
+  }
+  p,
+  i,
+  em,
+  a {
+    font-size: var(--smallfont);
   }
   .option {
     display: block;
@@ -222,26 +249,37 @@
   nav a:not(:first-child) {
     display: inline;
   }
-  h1,
-  h2 {
-    font-size: var(--largefont);
-  }
 }
 
 h1,
-h2 {
-  font-family: var(--title-style);
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+em,
+aside a,
+li,
+a {
+  font-family: var(--text-style);
+  font-size: var(--mediumfont);
+  color: var(--pale-dark-color);
 }
+h3,
+h2,
 h3 {
-  font-family: var(--esp-style);
+  padding: 15px;
+  margin: 10px;
 }
 p,
-img,
 i,
-em {
-  font-family: var(--para-style);
+em,
+li,
+a {
+  font-size: var(--smallfont);
 }
-aside a,
-li {
-  font-family: var(--para-style);
+a:hover {
+  color: var(--orange-color);
 }

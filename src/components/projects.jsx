@@ -6,10 +6,12 @@ class Projects extends React.Component {
       <div className="projects menu">
         <h5>PROJECTS</h5>
         <div className="img-container">
-          <p>{this.props.data.rights}</p>
           <p>{this.props.data.duration}</p>
-          <p>{this.props.data.objective}</p>
-          <p>{this.props.data.list} </p>
+          <ul>
+            <li>{this.props.data.list[0]}</li>
+            <li>{this.props.data.list[1]}</li>
+            <li>{this.props.data.list[2]}</li>
+          </ul>
           <img src="/assets/aws.png" alt="Berana" />
           <img src="/assets/Berana.png" alt="Berana" />
         </div>

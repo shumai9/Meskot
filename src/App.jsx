@@ -52,7 +52,7 @@ class App extends Component {
               <h1 className="App-title">
                 Hey, I'm <br /> Shumai
               </h1>
-              <p id="intro">Welcome! to my site</p>
+              <p id="intro">Welcome! to my site ~ under construction</p>
               {this.state.currentWidth >= 960 ? (
                 <Nav />
               ) : (
