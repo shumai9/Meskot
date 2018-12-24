@@ -22,19 +22,39 @@ class App extends Component {
     this.handleDevice = () => {
       this.setState({ currentWidth: window.innerWidth });
     };
-    this.handleOpen = () => {
-      this.setState({ open: true });
-    };
-    this.handleClose = () => {
+    this.toggleOptionsMenu = () => {
       if (this.state.open) {
-        this.setState({ open: false });
+        this.setState({
+          open: !this.state.open
+        });
+      } else {
+        this.setState({
+          open: !this.state.open
+        });
       }
     };
+    this.badgeHandler = this.badgeHandler.bind(this);
     this.setTitle = this.setTitle.bind(this);
   }
   setTitle = () => {
-    let routeEl = document.getElementsByClassName('route');
+    let routeEl = document.querySelector('route');
     document.title = `Meskot ${'|' + routeEl[0].lastChild.className}`;
+  };
+
+  badgeHandler = e => {
+    let badge = document.querySelector('aside');
+
+    e.stopPropagation();
+    if (badge.style.transform === 'translate3d(0vw, 0px, 0px)') {
+      badge.style.transform = 'translate3d(-170vw, 0px, 0px)';
+      badge.style.transition = 'transform .5s cubic-bezier(0, .52, 0, 1)';
+
+      console.warn('aside if margin', badge.style.margin);
+    } else {
+      badge.style.transform = 'translate3d(0vw, 0px, 0px)';
+
+      console.warn('aside else margin', badge.style.margin);
+    }
   };
   componentDidMount() {
     window.addEventListener('resize', this.handleDevice);
@@ -47,7 +67,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <Router>
-          <div className="App" onClick={this.handleClose}>
+          <div className="App">
             <header className="App-header">
               <h1 className="App-title">
                 Hey, I'm <br /> Shumai
@@ -58,14 +78,16 @@ class App extends Component {
               ) : (
                 <Option
                   open={open}
-                  handleClose={this.handleClose}
-                  handleOpen={this.handleOpen}
+                  toggleOptionsMenu={this.toggleOptionsMenu}
                 />
               )}
             </header>
             <div className="main route">
               <aside>
                 <h2>More of me</h2>
+                <span onClick={this.badgeHandler}>
+                  <img id="aside-close" src="/assets/option-close.svg" alt="" />
+                </span>
                 <div
                   className="LI-profile-badge"
                   data-version="v1"
@@ -86,6 +108,13 @@ class App extends Component {
                   </a>
                 </div>
               </aside>
+              <button
+                type="button"
+                id="roundButton"
+                onClick={this.badgeHandler}
+              >
+                Badge
+              </button>
               <Route exact path="/" render={null} />
               <Route
                 exact

@@ -11,7 +11,7 @@ class About extends React.Component {
   }
   render() {
     return (
-      <div className="about">
+      <div id="main" className="about">
         <h1>{this.props.data.intro}</h1>
         <img className="masawino" src="assets/massawa.jpg" alt="massawa" />
         <div>

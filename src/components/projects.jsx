@@ -3,7 +3,7 @@ import React from 'react';
 class Projects extends React.Component {
   render() {
     return (
-      <div className="projects menu">
+      <div id="main" className="projects menu">
         <h5>PROJECTS</h5>
         <div className="img-container">
           <p>{this.props.data.duration}</p>

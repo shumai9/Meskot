@@ -3,7 +3,7 @@ import React from 'react';
 class Contact extends React.Component {
   render() {
     return (
-      <div className="contact">
+      <div id="main" className="contact">
         <div>
           <h5> Contact details</h5>
           <p>Email: {this.props.data.email}</p>
@@ -13,11 +13,11 @@ class Contact extends React.Component {
             <a href={`${this.props.data.links[0]}`} target="_blank">
               Github profile
             </a>
-            <p>
-              <a href={`${this.props.data.links[1]}`} target="_blank">
-                linkedin
-              </a>
-            </p>
+          </p>
+          <p>
+            <a href={`${this.props.data.links[1]}`} target="_blank">
+              linkedin
+            </a>
           </p>
           <h5> Follow me:</h5>
           <p>

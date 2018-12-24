@@ -57,3 +57,7 @@ div .open,
   top: 2px;
   right: 2px;
 }
+#net {
+  height: 100vh;
+  width: 100vw;
+}
