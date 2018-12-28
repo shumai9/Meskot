@@ -15,12 +15,13 @@ class About extends React.Component {
         <h1>{this.props.data.intro}</h1>
         <img className="masawino" src="assets/massawa.jpg" alt="massawa" />
         <div>
-          <p>{this.props.data.body.bio}</p>
+          <p>{this.props.data.body.pro}</p>
+          <p>{this.props.data.body.edu}</p>
+          <p>{this.props.data.body.persona}</p>
           <Link id="esp" to={'/contact'}>
             {' '}
             Let' s get in touch?
           </Link>
-          <p>{this.props.data.body.edu}</p>
         </div>
         <div>
           <h2>WHY?</h2>

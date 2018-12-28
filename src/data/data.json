@@ -1,10 +1,16 @@
 {
   "about": {
-    "intro": "A Full Stack Software Engineer, ",
+    "intro": "Full Stack Software Engineer",
     "body": {
-      "bio": "Professionally, I develop web sites and web applications using industry grade technologies and practices. I am forever passionate and innovative about learning new technology and expanding my knowledge. I'm married and a proud father, I enjoy listening to jazz music while programming. My skills are broad: from ux to design, front end to back end development. I enjoy each aspect, and love building sites & mobile apps from start to finish, for clients all over the world. I'm available for remote work - if you would like to build something together,",
+      "pro": [
+        "Professionally, I develop web sites and web applications using industry grade technologies and practices. My skill set span: from front-end design and implementations to back-end development. I enjoy each aspect, and love building sites & mobile web apps from start to finish, for clients all over the world. I'm available for remote work - if you would like to build something together,",
+        "I am forever passionate and innovative about learning new technology and expanding my knowledge."
+      ],
       "edu": "Originally trained as a Marine Biotechnologist at University of Asmara, later on switched career to follow my passion technology and the world of programming.",
-      "reason": " It's the love and passion that I have to the Art of creativity.  I sketch, paint and play keyboard among other things."
+      "persona": [
+        " I'm married and a proud father, I enjoy listening to jazz music while programming."
+      ],
+      "reason": " It's the love and passion that I have for Art and creativity. When on my creative zone I sketch, paint and play keyboard among other things."
     },
     "current": " Full Stack Web Developer living close to London",
     "status": "Employed"

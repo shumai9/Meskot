@@ -155,7 +155,7 @@ aside {
 .masawino {
   align-content: center;
   float: right;
-  margin: 3rem 0;
+  margin: 15px;
   width: auto;
   border-radius: 1rem;
   -webkit-box-shadow: var(--app-shadow);
@@ -169,6 +169,8 @@ aside {
 }
 
 img.badge {
+  position: relative;
+  left: 47%;
   height: 30px;
   padding: 5px;
 }
@@ -237,15 +239,16 @@ div.footer p {
   }
   .masawino {
     width: 100%;
+    float: unset;
   }
   div.sticky {
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
     box-shadow: unset;
   }
-  /*img {
-    width: 100%;
-  }*/
+  img.badge {
+    left: unset;
+  }
 }
 
 /****************
@@ -288,6 +291,9 @@ div.footer p {
   }
   img {
     width: 100%;
+  }
+  img.badge {
+    left: unset;
   }
 }
 
