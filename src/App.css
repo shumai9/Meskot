@@ -10,16 +10,16 @@
   --nav-sandycolor: #fce6ba;
   --orange-color: #c95f12;
   --header-img: url('/assets/nef.jpg') 50% 50% no-repeat;
-  /*text color*/
-  --text-style: Diplomata, cursive;
-  --text-color: #30ff7b;
-  --para-style: 'Petit Formal Script', cursive;
-  --esp-style: 'Bai Jamjuree', sans-serif;
+  /*font-style*/
+  --title-font: 'Diplomata', cursive;
+  --para-font: 'Philosopher';
+  --esp-style: 'Petit Formal Script', cursive;
   --footer-bg: linear-gradient(#031d2f, #002);
+  --text-color: #30ff7b;
   /*font size*/
-  --largefont: 24px;
+  --largefont: 30px;
   --mediumfont: 16px;
-  --smallfont: 11px;
+  --smallfont: 12px;
   /*shadow*/
   --app-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
@@ -39,6 +39,7 @@
 #intro {
   text-align: center;
 }
+
 /**********************************\
 /*            Header                \ 
 /************************************/
@@ -77,6 +78,7 @@
 /*Logo animation*/
 .App-logo {
   position: absolute;
+  top: 0px;
   left: 0px;
   animation: App-logo-spin infinite 10s cubic-bezier(1, -0.09, 0.44, 0.93);
   width: 3rem;
@@ -103,15 +105,15 @@ aside {
   transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
   transform: translate3d(-170vw, 0, 0);
   width: 17rem;
-  min-height: 40rem;
+  /*min-height: 40rem;*/
   background: #ccc;
   position: absolute;
 }
-#aside-close {
+.aside-close {
   width: 50px;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 0px;
+  right: 3px;
 }
 /* style to target the route rendered elements*/
 .home,
@@ -119,20 +121,20 @@ aside {
 .contact,
 .timeline,
 .projects {
-  padding: 1% 4%;
+  padding: 5% 5%;
   text-align: left;
   width: 100%;
   min-height: 40rem;
   background: var(--palegreen);
 }
-#roundButton {
+/*#roundButton {
   background-color: #96d9ff;
-  margin-bottom: 20px;
+  margin: 30px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 10px solid #0065a6;
-  outline: none;
+  outline: 0;
   transition: all 0.2s cubic-bezier(0, 1.26, 0.8, 1.28);
 }
 #roundButton:hover {
@@ -145,7 +147,7 @@ aside {
 #roundButton:active {
   border-color: #003557;
   background-color: #fff;
-}
+}*/
 /**********************************\
 /          Image style......        \ 
 /************************************/
@@ -154,7 +156,6 @@ aside {
   align-content: center;
   float: right;
   margin: 3rem 0;
-  #roundButtonpadding: 1px;
   width: auto;
   border-radius: 1rem;
   -webkit-box-shadow: var(--app-shadow);
@@ -165,6 +166,11 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+img.badge {
+  height: 30px;
+  padding: 5px;
 }
 
 /**********************************\
@@ -180,7 +186,6 @@ aside {
   padding: 5% 0%;
 }
 div.footer p {
-  font-family: var(--text-style);
   font-size: var(--smallfont);
   color: var(--text-color);
 }
@@ -206,7 +211,6 @@ div.footer p {
     display: block;
   }
   .option a {
-    font-size: var(--smallfont);
   }
   .nav-bar {
     height: 12vh;
@@ -223,13 +227,12 @@ div.footer p {
   }
   aside {
     width: 100%;
-    height: 100%;
+    min-height: 40rem;
   }
   div.App,
   .App-header,
   .main,
   .footer {
-    grid: auto-flow dense / 100%;
     grid-gap: none;
   }
   .masawino {
@@ -240,9 +243,9 @@ div.footer p {
     -moz-box-shadow: unset;
     box-shadow: unset;
   }
-  img {
+  /*img {
     width: 100%;
-  }
+  }*/
 }
 
 /****************
@@ -281,7 +284,6 @@ div.footer p {
   .App-header,
   .main,
   .footer {
-    grid: auto-flow dense / 100%;
     grid-gap: none;
   }
   img {
@@ -297,36 +299,38 @@ div.footer p {
     display: inline;
   }
 }
-
+/***
+General rules
+**/
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-i,
-em,
-aside a,
-li,
-a {
-  font-family: var(--text-style);
+h6 {
+  font-family: var(--title-font);
   font-size: var(--mediumfont);
   color: var(--pale-dark-color);
-}
-h3,
-h2,
-h3 {
   padding: 15px;
   margin: 10px;
 }
 p,
 i,
 em,
+aside a,
 li,
 a {
-  font-size: var(--smallfont);
+  font-family: var(--para-font);
+  font-size: var(--mediumfont);
+  color: var(--pale-dark-color);
 }
+
 a:hover {
   color: var(--orange-color);
+}
+#esp {
+  font-family: var(--esp-style);
+}
+.icon {
+  width: 70px;
 }

@@ -48,12 +48,8 @@ class App extends Component {
     if (badge.style.transform === 'translate3d(0vw, 0px, 0px)') {
       badge.style.transform = 'translate3d(-170vw, 0px, 0px)';
       badge.style.transition = 'transform .5s cubic-bezier(0, .52, 0, 1)';
-
-      console.warn('aside if margin', badge.style.margin);
     } else {
       badge.style.transform = 'translate3d(0vw, 0px, 0px)';
-
-      console.warn('aside else margin', badge.style.margin);
     }
   };
   componentDidMount() {
@@ -86,7 +82,11 @@ class App extends Component {
               <aside>
                 <h2>More of me</h2>
                 <span onClick={this.badgeHandler}>
-                  <img id="aside-close" src="/assets/option-close.svg" alt="" />
+                  <img
+                    className="aside-close icon"
+                    src="/assets/option-close.svg"
+                    alt=""
+                  />
                 </span>
                 <div
                   className="LI-profile-badge"
@@ -108,13 +108,12 @@ class App extends Component {
                   </a>
                 </div>
               </aside>
-              <button
-                type="button"
-                id="roundButton"
+              <img
+                className="icon badge"
+                src="/assets/badge-icon.svg"
+                alt=""
                 onClick={this.badgeHandler}
-              >
-                Badge
-              </button>
+              />
               <Route exact path="/" render={null} />
               <Route
                 exact

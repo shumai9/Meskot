@@ -1,45 +1,47 @@
+div .open,
+.close,
 .option nav,
-img#heart,
-img#x-arrow {
+img.closed,
+img.opened {
   position: absolute;
-  right: 1%;
-  top: 1%;
+  right: 1px;
+  top: 1px;
+  z-index: 150;
 }
 .option a {
   display: block;
   margin: 20% 43% 20% 11%;
   max-width: 100%;
-  font-size: var(--mediumfont);
 }
 
 .option nav {
   display: block;
-  width: 12rem;
+  width: 14rem;
   height: auto;
   background: rgba(14, 69, 84, 0.74);
-  z-index: 1;
+  z-index: 10;
   border-radius: 12px 3px;
 }
 
-.option #heart,
-.option #x-arrow {
+.option .opened,
+.option .closed {
   display: inline-block;
-  width: 4rem;
-  z-index: 150;
 }
 
 .option nav img {
   display: none;
 }
 .option .list {
+  display: block;
+  font-family: var(--mediumfont);
+  position: relative;
+  top: 0px;
+  z-index: 150;
   padding: 1px;
   margin-left: 1px;
-  display: block;
-  position: relative;
   text-align: left;
   border-radius: 3rem 50rem 1rem 1rem;
   background: #fbfbfbb3;
-  z-index: 150;
 }
 .option .list a.active:not(:first-child) {
   background: none;

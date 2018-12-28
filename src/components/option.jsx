@@ -17,13 +17,13 @@ class Option extends React.Component {
     return open ? (
       <div className="option open" onClick={this.toggleMenu}>
         <div id="net">
-          <img id="heart" src="/assets/option-close.svg " alt="" />
+          <img className="icon opened" src="/assets/option-close.svg " alt="" />
         </div>
         {open ? <Nav /> : null}
       </div>
     ) : (
       <div className="option close" onClick={this.toggleMenu}>
-        <img id="x-arrow" src="/assets/option-open.svg" alt="" />
+        <img className="icon closed" src="/assets/option-open.svg" alt="" />
       </div>
     );
   }

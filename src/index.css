@@ -3,23 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 150%;
-  font-size-adjust: var(--mediumfont);
 }
 
-html {
-  scroll-behavior: smooth;
-  width: 100%;
-}
-
-body {
-  background: var(--palegreen);
-}
-/***Style for LinkedIn badge***/
-aside {
-  /*padding: 0 1% 3% 1%;
-  transition: margin-top 1.8s;
-  padding: 20px;*/
-}
 div.LI-profile-badge {
   z-index: -1;
 }
@@ -44,7 +29,7 @@ img,
 video,
 canvas,
 iframe {
-  width: 25rem;
+  width: 20rem;
 }
 div p {
   padding: 15px;

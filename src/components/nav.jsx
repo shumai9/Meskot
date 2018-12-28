@@ -11,7 +11,7 @@ class Nav extends React.Component {
   }
   srollToView = e => {
     e.preventDefault();
-    var content = document.querySelector('.main');
+    let content = document.querySelector('.main');
     content.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -48,7 +48,7 @@ class Nav extends React.Component {
       >
         <div className="list" onClick={this.srollToView}>
           <NavLink exact to="/">
-            <img src="/assets/shuma.svg" className="App-logo" alt="logo" />
+            <img src="/assets/shuma.svg" className="App-logo icon" alt="logo" />
           </NavLink>
           <NavLink exact to={'/home'}>
             HOME
