@@ -12,8 +12,8 @@ class Projects extends React.Component {
             <li>{this.props.data.list[1]}</li>
             <li>{this.props.data.list[2]}</li>
           </ul>
-          <img src="/assets/aws.png" alt="Berana" />
-          <img src="/assets/Berana.png" alt="Berana" />
+          <img src="/assets/aws.jpg" alt="Berana" />
+          <img src="/assets/Berana.jpg" alt="Berana" />
         </div>
       </div>
     );

@@ -51,8 +51,8 @@
   width: 100%;
 }
 .App-header p {
-  position: absolute;
-  top: 84%;
+  position: relative;
+  top: 64%;
   padding: 0.78%;
   font-size: large;
   border-radius: 1rem;

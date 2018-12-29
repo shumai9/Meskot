@@ -12,7 +12,11 @@ class Nav extends React.Component {
   srollToView = e => {
     e.preventDefault();
     let content = document.querySelector('.main');
-    content.scrollIntoView({ behavior: 'smooth' });
+    content.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
   };
 
   handleScroll = () => {
