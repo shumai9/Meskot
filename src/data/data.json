@@ -1,19 +1,14 @@
 {
   "about": {
-    "intro": "Full Stack Software Engineer",
-    "body": {
-      "pro": [
-        "Professionally, I develop web sites and web applications using industry grade technologies and practices. My skill set span: from front-end design and implementations to back-end development. I enjoy each aspect, and love building sites & mobile web apps from start to finish, for clients all over the world. I'm available for remote work - if you would like to build something together,",
-        "I am forever passionate and innovative about learning new technology and expanding my knowledge."
-      ],
-      "edu": "Originally trained as a Marine Biotechnologist at University of Asmara, later on switched career to follow my passion technology and the world of programming.",
-      "persona": [
-        " I'm married and a proud father, I enjoy listening to jazz music while programming."
-      ],
-      "reason": " It's the love and passion that I have for Art and creativity. When on my creative zone I sketch, paint and play keyboard among other things."
-    },
-    "current": " Full Stack Web Developer living close to London",
-    "status": "Employed"
+    "intro": ["Full Stack Software Engineer"],
+    "body": [
+      "Professionally, I develop web sites and web applications using industry grade technologies and practices. My skill set span: from front-end design and implementations to back-end development. I enjoy each aspect, and love building sites & mobile web apps from start to finish.",
+      "I am forever passionate and innovative about learning new technology and expanding my knowledge. Although trained as Biotechnologist at University of Asmara, I later on switched career to follow my passion in technology and fully immersed myself in the world of software programming.",
+      "Personally, I'm married and a proud father. I enjoy listening to jazz music while programming. When on my creative zone I sketch, paint and play keyboard among other things.",
+      "As full-stack Web Developer living close to London, I able to reach out and work for clients all over the world. I'm available for remote work and should you fancy building something together hit the link below."
+    ],
+    "status": ["Employed"],
+    "img": ["assets/massawa.jpg"]
   },
   "home": {
     "intro": ["My Story"],
@@ -30,28 +25,49 @@
     ]
   },
   "contact": {
-    "email": "shumx@shumai.co.uk",
-    "tel": "00-297-123-401",
+    "email": ["shumx@shumai.co.uk"],
+    "tel": ["00-297-123-401"],
     "links": [
       "http://github.com/shumai9",
-      "https://www.linkedin.com/in/soazd1/"
+      "https://www.linkedin.com/in/soazd1/",
+      "https://twitter.com/ocbayes"
     ],
-    "follow": ["https://twitter.com/ocbayes"]
+    "img": []
   },
   "projects": {
-    "rights": "",
-    "objective": "Projects worked to master skills",
-    "list": ["hilina", "banta", "go-chef"],
-    "duration": "Time is relative. "
+    "title": ["hilina", "banta", "go-chef"],
+    "objective": ["Projects worked to master skills"],
+    "duration": ["Time is relative. "],
+    "summary": [],
+    "img": []
   },
   "timeline": {
-    "career": "Web Development",
+    "career": ["Web Development"],
     "places": [],
-    "date": []
+    "date": [],
+    "img": []
   },
   "footer": {
-    "rights": "© 2018",
+    "rights": ["© 2018"],
     "feeds": ["news about my brand/blog", "what is shumai up to?"],
-    "quotes": "Home is where heart is"
+    "quotes": [
+      "Home is where heart is",
+      "Your limitation—it's only your imagination.",
+      "Push yourself, because no one else is going to do it for you.",
+      "Sometimes later becomes never. ...",
+      "Great things never come from comfort zones.",
+      "Dream it. Wish it. Do it.",
+      "Success doesn't just find you. You have to out and get it.",
+      "The harder you work for something, the greater you'll feel when you achieve it.",
+      "Dream bigger. Do bigger.",
+      "Wake up with determination. Go to bed with satisfaction",
+      "Do something today that your future self will thank you for.",
+      "It’s going to be hard, but hard does not mean impossible.",
+      "Don’t wait for opportunity. Create it.",
+      "Sometimes we’re tested not to show our weaknesses, but to discover our strengths.",
+      "The key to success is to focus on goals, not obstacles.",
+      "Dream it. Believe it. Build it."
+    ],
+    "img": []
   }
 }
