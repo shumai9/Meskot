@@ -16,9 +16,15 @@
     "status": "Employed"
   },
   "home": {
-    "intro": "My Story",
-    "body": "Run's like this... born and lived in Eritrea untill the age of 30, where I acheived Diploma in Marine Microbiology and carried on later to get BSc. Marine Biotechnology. I love to travel and enjoy admiring beauty in nature particularly gazing at mesmerising sun raise and set. ",
-    "catch": "",
+    "intro": ["My Story"],
+    "body": [
+      "Run's like this... born and lived in Eritrea untill the age of 30, where I acheived a diploma in Marine Microbiology and carried on later to get BSc. Marine Biotechnology and I did make my parrents proud.",
+      "Although it was incredibly hard to leave my home I left it in the beginning of 2013 due to political instability and sought refuge in UN refugee camps in Ethiopia. I still recall the sadness mixed with joy and excitement of starting all over again with great expectations. There I met my soul mate and my starting-over got even better. Since then I travelled to Sudan, South Sudan, Uganda, UAE, Srilanka and finally UK. ",
+      " I love to travel and enjoy admiring beauty in nature particularly gazing at mesmerizing sun raise and set. please enjoy some of  the photos of my travell",
+      "It's said ' success is the progressive realization of worthy goals  and I believe I am on a journey In an endless desire to acheive great things in life."
+    ],
+
+    "catch": ["Tell a joke", "I know that joke"],
     "img": [
       "http://3.bp.blogspot.com/_UtY_ZR-MU98/TCt5r13qAxI/AAAAAAAAEBc/20SsDc2yzyE/s1600/2008+Hawaii+July+098.jpg"
     ]
