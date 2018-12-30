@@ -2,18 +2,50 @@ import React from 'react';
 
 class Projects extends React.Component {
   render() {
+    const title = this.props.data.title;
+    const aim = this.props.data.aim;
+    const time = this.props.data.time;
+    const summary = this.props.data.summary;
+    const url = this.props.data.img;
     return (
       <div id="main" className="projects menu">
         <h5>PROJECTS</h5>
+        {title.map((text, i) => {
+          return (
+            <div key={i}>
+              <h3>{text}</h3>
+            </div>
+          );
+        })}
+        {aim.map((text, i) => {
+          return (
+            <div key={i}>
+              <p>{text}</p>
+            </div>
+          );
+        })}
+        {time.map((text, i) => {
+          return (
+            <div key={i}>
+              <p>{text}</p>
+            </div>
+          );
+        })}
+        {summary.map((text, i) => {
+          return (
+            <div key={i}>
+              <p>{text}</p>
+            </div>
+          );
+        })}
         <div className="img-container">
-          <p>{this.props.data.duration}</p>
-          <ul>
-            <li>{this.props.data.list[0]}</li>
-            <li>{this.props.data.list[1]}</li>
-            <li>{this.props.data.list[2]}</li>
-          </ul>
-          <img src="/assets/aws.jpg" alt="Berana" />
-          <img src="/assets/Berana.jpg" alt="Berana" />
+          {url.map((link, i) => {
+            return (
+              <div key={i}>
+                <img id="proj" src={link} alt={`${i}`} />
+              </div>
+            );
+          })}
         </div>
       </div>
     );

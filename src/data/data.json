@@ -36,10 +36,10 @@
   },
   "projects": {
     "title": ["hilina", "banta", "go-chef"],
-    "objective": ["Projects worked to master skills"],
-    "duration": ["Time is relative. "],
-    "summary": [],
-    "img": []
+    "aim": ["Projects worked to master skills"],
+    "time": ["Time is relative. "],
+    "summary": ["This project was very successful endavore"],
+    "img": ["assets/aws.jpg", "assets/Berana.jpg"]
   },
   "timeline": {
     "career": ["Web Development"],

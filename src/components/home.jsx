@@ -28,7 +28,7 @@ class Home extends React.Component {
           return <p key={j}> {text}</p>;
         })}
         {url.map((text, l) => {
-          return <img src={url} key={l} alt={`${l}`} />;
+          return <img src={text} key={l} alt={`${l}`} />;
         })}
         {idea.map((text, k) => {
           return <p key={k}>{text}</p>;

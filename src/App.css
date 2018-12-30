@@ -163,15 +163,17 @@ aside {
   box-shadow: var(--app-shadow);
 }
 .img-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 15px 15px;
 }
-
 img.badge {
   position: relative;
   left: 47%;
-  height: 30px;
+  height: 6rem;
   padding: 5px;
 }
 
@@ -329,6 +331,8 @@ a {
   font-family: var(--para-font);
   font-size: var(--mediumfont);
   color: var(--pale-dark-color);
+  padding: 15px;
+  margin: 10px;
 }
 
 a:hover {

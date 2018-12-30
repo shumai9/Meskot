@@ -43,13 +43,16 @@ class App extends Component {
 
   badgeHandler = e => {
     let badge = document.querySelector('aside');
+    let badgeIcon = document.querySelector('img.badge');
 
     e.stopPropagation();
     if (badge.style.transform === 'translate3d(0vw, 0px, 0px)') {
       badge.style.transform = 'translate3d(-170vw, 0px, 0px)';
       badge.style.transition = 'transform .5s cubic-bezier(0, .52, 0, 1)';
+      badgeIcon.style.display = '';
     } else {
       badge.style.transform = 'translate3d(0vw, 0px, 0px)';
+      badgeIcon.style.display = 'none';
     }
   };
   componentDidMount() {
