@@ -29,8 +29,5 @@ img,
 video,
 canvas,
 iframe {
-  width: 20rem;
-}
-div p {
-  padding: 15px;
+  width: 100%;
 }

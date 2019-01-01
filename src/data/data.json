@@ -35,7 +35,7 @@
     "img": []
   },
   "projects": {
-    "title": ["hilina", "banta", "go-chef"],
+    "title": ["Hilina", "Banta", "Go-chef"],
     "aim": ["Projects worked to master skills"],
     "time": ["Time is relative. "],
     "summary": [
@@ -50,8 +50,8 @@
     "places": ["Asmara", "Keren", "Massawa"],
     "date": ["1984", "2000", "2012", "2013"],
     "img": [
-      "https://lh5.googleusercontent.com/-MSgSRnwNOoA/TXiabXkzEjI/AAAAAAAABUk/eNUTqF5LXU0/s1600/Keren%252C+Eritrea+-+construction.JPG",
       "https://media.gettyimages.com/photos/railway-massawaasmara-in-eritrea-in-may-1996-picture-id110134360",
+      "https://lh5.googleusercontent.com/-MSgSRnwNOoA/TXiabXkzEjI/AAAAAAAABUk/eNUTqF5LXU0/s1600/Keren%252C+Eritrea+-+construction.JPG",
       "https://media.gettyimages.com/photos/photo-taken-on-july-22-2018-shows-a-general-view-of-old-massawa-with-picture-id1007690586"
     ]
   },

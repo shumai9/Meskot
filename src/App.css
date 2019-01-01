@@ -97,9 +97,6 @@
 /          *** Main Content ***     \ 
 /************************************/
 .main {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
 }
 aside {
   transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
@@ -325,14 +322,12 @@ h6 {
 p,
 i,
 em,
-aside a,
 li,
 a {
   font-family: var(--para-font);
   font-size: var(--mediumfont);
   color: var(--pale-dark-color);
   padding: 15px;
-  margin: 10px;
 }
 
 a:hover {

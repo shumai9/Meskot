@@ -22,9 +22,9 @@ class Timeline extends React.Component {
         {place.map((title, k) => {
           return (
             <div>
-              <img src={`${this.state.url[k]}`} alt={`${k}`} />
+              <img src={`${this.state.url[k]}`} alt={`${title}`} />
               <p>
-                {this.state.places[k]} ; {this.state.time[k]}
+                {this.state.places[k]} : {this.state.time[k]}
               </p>
             </div>
           );
