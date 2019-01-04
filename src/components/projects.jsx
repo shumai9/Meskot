@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/projects.css';
 
 class Projects extends React.Component {
   constructor(props) {
@@ -16,17 +17,25 @@ class Projects extends React.Component {
     return (
       <div id="main" className="projects menu">
         <h5>PROJECTS</h5>
-        {title.map((text, i) => {
-          return (
-            <div key={i}>
-              <h6>{text}</h6>
-              <img id="proj" src={`${this.state.url[i]}`} alt={`${i}`} />
-              <p>{this.state.aim[i]}</p>
-              <p>{this.state.time[i]}</p>
-              <p>{this.state.summary[i]}</p>
-            </div>
-          );
-        })}
+        <div className="proj">
+          {title.map((text, i) => {
+            return (
+              <div className="subpro" key={i}>
+                <h6>{text}</h6>
+                <img
+                  className="masawino"
+                  src={`${this.state.url[i]}`}
+                  alt={`${text}`}
+                />
+                <div id="caption">
+                  <p>Aim: {this.state.aim[i]}</p>
+                  <p>Time taken: {this.state.time[i]}</p>
+                  <p>Summary: {this.state.summary[i]}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

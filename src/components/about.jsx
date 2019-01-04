@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../style/about.css';
 
 class About extends React.Component {
   constructor(props) {
@@ -20,24 +21,35 @@ class About extends React.Component {
         {title.map((text, i) => {
           return <h1 key={i}>{text}</h1>;
         })}
-        {url.map((link, l) => {
-          return <img className="masawino" src={link} key={l} alt={`${l}`} />;
-        })}
+        <div className="img-container">
+          {url.map((link, l) => {
+            return <img className="masawino" src={link} key={l} alt={`${l}`} />;
+          })}
+        </div>
         <h2>MY WHY?</h2>
-        {body.map((text, j) => {
-          return (
-            <div key={j}>
-              <p>{text}</p>
-            </div>
-          );
-        })}
+        <div className="text-container">
+          {body.map((text, j) => {
+            return (
+              <p className="para" key={j}>
+                {text}
+              </p>
+            );
+          })}
+        </div>
         <Link id="esp" to={'/contact'}>
           {' '}
           Let' s get in touch?
         </Link>
-        {status.map((text, k) => {
-          return <h5 key={k}>Currently : {text}</h5>;
-        })}
+        <p>Here's a few things I'm experienced with:</p>
+        <ul className="skills">
+          {status.map((text, k) => {
+            return (
+              <li className="lang" key={k}>
+                {text}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }

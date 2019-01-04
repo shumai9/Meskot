@@ -9,7 +9,7 @@ import Nav from './components/nav.jsx';
 import Footer from './components/footer.jsx';
 import Option from './components/option.jsx';
 import json from './data/data.json';
-import './App.css';
+import './style/App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends Component {

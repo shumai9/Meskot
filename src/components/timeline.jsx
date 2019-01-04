@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/timeline.css';
 
 class Timeline extends React.Component {
   constructor(props) {
@@ -17,18 +18,24 @@ class Timeline extends React.Component {
     return (
       <div id="main" className="timeline">
         {job.map((title, k) => {
-          return <h1>{title}</h1>;
+          return <h1 key={k}>{title}</h1>;
         })}
-        {place.map((title, k) => {
-          return (
-            <div>
-              <img src={`${this.state.url[k]}`} alt={`${title}`} />
-              <p>
-                {this.state.places[k]} : {this.state.time[k]}
-              </p>
-            </div>
-          );
-        })}
+        <div className="img-container">
+          {place.map((title, k) => {
+            return (
+              <div key={k}>
+                <img
+                  className="masawino"
+                  src={`${this.state.url[k]}`}
+                  alt={`${title}`}
+                />
+                <p>
+                  {this.state.places[k]} : {this.state.time[k]}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './nav.jsx';
-import './option.css';
+import '../style/option.css';
 
 class Option extends React.Component {
   constructor(props) {

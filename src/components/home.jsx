@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/home.css';
 
 class Home extends React.Component {
   constructor(props) {
@@ -24,12 +25,21 @@ class Home extends React.Component {
         {title.map((text, i) => {
           return <h1 key={i}>{text}</h1>;
         })}
-        {body.map((text, j) => {
-          return <p key={j}> {text}</p>;
-        })}
-        {url.map((text, l) => {
-          return <img src={text} key={l} alt={`${l}`} />;
-        })}
+        <div className="text-container">
+          {body.map((text, j) => {
+            return (
+              <p className="para" key={j}>
+                {' '}
+                {text}
+              </p>
+            );
+          })}
+        </div>
+        <div className="img-container">
+          {url.map((text, l) => {
+            return <img className="masawino" src={text} key={l} alt={`${l}`} />;
+          })}
+        </div>
         {idea.map((text, k) => {
           return <p key={k}>{text}</p>;
         })}
