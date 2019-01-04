@@ -1,0 +1,16 @@
+/**********************************\
+/          *** Foote(--r ***           \ 
+/************************************/
+.footer {
+  text-align: center;
+  display: block;
+  height: auto;
+  width: 100%;
+  background: var(--footer-bg, #ccc);
+  color: var(--text-color);
+  padding: 5% 0%;
+}
+div.footer p {
+  font-size: var(--smallfont);
+  color: var(--text-color);
+}
