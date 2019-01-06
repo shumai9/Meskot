@@ -14,3 +14,12 @@ div.footer p {
   font-size: var(--smallfont);
   color: var(--text-color);
 }
+
+.quote {
+  width: 100%;
+  height: 70px;
+  color: #ffc;
+  font-family: var(--esp-style);
+  background: radial-gradient(rgba(3, 3, 3, 0.315), rgba(204, 204, 204, 0.164));
+  margin: 0;
+}
