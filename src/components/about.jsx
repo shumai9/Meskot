@@ -15,30 +15,36 @@ class About extends React.Component {
     const body = this.props.data.body;
     const status = this.props.data.status;
     const url = this.props.data.img;
+    const headingStyle = {
+      background: 'no-repeat 100% 50% url(' + url[1] + ')',
+      backgroundsize: 'cover',
+      height: '20vh',
+      width: '100%'
+    };
 
     return (
       <div id="main" className="about">
-        {title.map((text, i) => {
-          return <h1 key={i}>{text}</h1>;
-        })}
-        <div className="img-container">
-          {url.map((link, l) => {
-            return <img className="masawino" src={link} key={l} alt={`${l}`} />;
-          })}
-        </div>
-        <h2>MY WHY?</h2>
-        <div className="text-container">
-          {body.map((text, j) => {
+        <div>
+          {title.map((text, i) => {
             return (
-              <p className="para" key={j}>
+              <h1 style={headingStyle} key={i}>
                 {text}
-              </p>
+              </h1>
             );
           })}
+          <div className="text-container">
+            {body.map((text, j) => {
+              return (
+                <p className="para" key={j}>
+                  {text}
+                </p>
+              );
+            })}
+          </div>
         </div>
         <Link id="esp" to={'/contact'}>
           {' '}
-          Let' s get in touch?
+          Let' s get in touch
         </Link>
         <p>Here's a few things I'm experienced with:</p>
         <ul className="skills">
@@ -50,6 +56,7 @@ class About extends React.Component {
             );
           })}
         </ul>
+        <img className="masawino" src={url[0]} alt="massawa" />
       </div>
     );
   }

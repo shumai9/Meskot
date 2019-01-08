@@ -1,3 +1,10 @@
 .about {
   background: #38d;
+  display: flex;
+  flex-direction: column;
+}
+#about-me {
+  background: no-repeat 50% 50%
+    url(https://lh3.googleusercontent.com/eQyGuYXulRSpl76_vJQLgZuXxIT71LKHfzgifORnCEebXj8u89xl6FxeAZCQ4J7j3LQj0PMMh4TawwMlsrNicoquAYu8LH0fNSv2Jjk66vwTaApGyJfAtnaldz4Nmqq_EKlm-CArXTmtaqWi5Q_fnFrk0fLkjxkFYxmxMagwdFvu648KLxratm4AcPvldlHLUmxvB7yeaSCp5GN09aUTbt0hbc9mlhzhueqU8x642rg02uN0K9dWY8ffy28lsRXahGneUmlNUSH55tnZOejYZnCaPSvlMEiFdkvJsRrVJQiAj76Cb92t2B5LOvyxdJtdnnZzwxLFUlic77120FJtUIGET8kcGmr5hUkEeigazHxDbVMfR13Mwfz2xlN4IQVqbDLOXOs4p1dAa4WoveIVS97aJ6onGEN7L498fLd_IyUUucDIPRpzoBvL2ChpTf9L6Cw8vXYZUqe-hklgSbR8uBCNnII6yyrjZXNv1QU4tkDhjhJvaq8yyrEhRo2-oefnHY9_RdiuQtZCCPugolmjVr_n2J_T-udgFQ8ZTMsojmEz7aZFhe7rfkYFWqAMyDIOKzUrnpBFfkD7wiV0ailYZel-pjRFW95Y-KY1xDq0iSoVqDIdvp3ZOyqCXuBLub9w258oLsH9xG-7tuEoW_AjxCHt=w896-h672-no);
+  height: 100%;
 }

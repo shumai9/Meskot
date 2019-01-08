@@ -130,7 +130,7 @@ aside {
 .text-container,
 div.proj {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: repeat(4, 1fr);
   border-block-start: 1px solid #ccc;
 }
 .lang,
