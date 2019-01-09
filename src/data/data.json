@@ -8,14 +8,22 @@
       "Personally, I'm married and a proud father. I enjoy listening to jazz music while programming. When on my creative zone I sketch, paint and play keyboard among other things."
     ],
     "status": [
+      "Git",
+      "Bash-Cli",
+      "Ruby",
       "Ruby on Rails",
       "Python",
       "Django",
       "JavaScript(ES6)",
-      "shumai",
-      "HTML5 & CSS3",
+      "HTML5",
+      "CSS3",
       "React.JS",
-      "Jekyll"
+      "Vue.js",
+      "Jekyll",
+      "Sinatra",
+      "Padrino",
+      "linux Os",
+      "AWS"
     ],
     "img": [
       "assets/massawa.jpg",
@@ -26,9 +34,9 @@
   "home": {
     "intro": ["My Story"],
     "body": [
-      "Run's like this... born and lived in Eritrea untill the age of 30, where I acheived a diploma in Marine Microbiology and carried on later to get BSc. Marine Biotechnology. After finishing college, I knew deep down that I had to make a pivotal decision that could turn my life arround. 'Should I stay ? or Should I go ?', The reality was that my country is broken and managed by corrapt a dictator with no hope of reforms and change but killings and abdactions and a super inflated economy just to top it up. I had to leave or burn there.    ",
-      "Before finally settling in the UK My wife and I travelled to Sudan, South Sudan, Uganda, UAE, Srilanka. I enjoy travel and love admiring beauty in nature particularly gazing at the mesmerizing colorful sun raise and set. Here are some photos I have taken during such expierence.",
+      "Run's like this... born and lived in Eritrea untill the age of 30, where I acheived a diploma in Marine Microbiology and carried on later to get BSc Marine Biotechnology. After finishing college, I knew deep down that I had to make a critical decision that could turn my life arround. The reality is my country had been broken and managed by a corrupt leadership for a couple of decades with no hope for reforms of any kind. But the killings and abdactions of innocent citizens and indefinit natinal service continued to hount the country.To top it up a super inflated economy rendered my country an bearable to live. I had to leave.",
       "Although it was incredibly hard to leave my home town, I left in the beginning of 2013, due to political instability and sought refuge in UN refugee camps in Ethiopia. I still recall the mixed feelings of loss, joy and excitement of starting all over again. My starting-over got even better when I met my soul mate there. Since then we got married and living happily ever after.",
+      "Before finally settling in the UK My wife and I travelled to Sudan, South Sudan, Uganda, UAE, Srilanka. I enjoy travel and love admiring beauty in nature particularly gazing at the mesmerizing colorful sun raise and set. Here are some photos I have taken during such expierence.",
       "It's said ' success is the progressive realization of worthy goals  and I believe I am on a journey In an endless desire to acheive great things in life."
     ],
 
@@ -100,6 +108,6 @@
       "The key to success is to focus on goals, not obstacles.",
       "Dream it. Believe it. Build it."
     ],
-    "img": []
+    "img": ["assets/massawa.jpg"]
   }
 }

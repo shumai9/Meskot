@@ -35,7 +35,7 @@ class About extends React.Component {
           <div className="text-container">
             {body.map((text, j) => {
               return (
-                <p className="para" key={j}>
+                <p className={`para ${j}`} key={j}>
                   {text}
                 </p>
               );
