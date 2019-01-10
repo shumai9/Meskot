@@ -6,7 +6,7 @@ class Projects extends React.Component {
     super(props);
     this.state = {
       summary: this.props.data.summary,
-      aim: this.props.data.aim,
+      tech: this.props.data.tech,
       time: this.props.data.time,
       url: this.props.data.img
     };
@@ -28,7 +28,7 @@ class Projects extends React.Component {
                   alt={`${text}`}
                 />
                 <div id="caption">
-                  <p>Aim: {this.state.aim[i]}</p>
+                  <p>Technologies used: {this.state.tech[i]}</p>
                   <p>Time taken: {this.state.time[i]}</p>
                   <p>Summary: {this.state.summary[i]}</p>
                 </div>

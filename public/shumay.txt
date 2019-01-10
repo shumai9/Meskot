@@ -1,7 +1,0 @@
-Hi I am shumai.
-
-I am enthusiastic and driven with incredible patience, persistence to problem-solving skills, reasoning, and passion for advancement in technology. 
-I got experience working in pair-programming and participated in group projects to
-further build on teamwork and code collaborations.I have a solid understanding and practical skills in 
-Ruby on Rails, Minitest, Rspec, React, Postgres, Redis, Heroku, Github, CircleCI, also I have experience in use of front-end technologies such as  React JS, HTML5, CSS3, Javascript and other self-thought frameworks like Vue.js and Next.js. I understand, and can work on both sides of the stack front or back-end services. I believe that learning is like success - a progressive realisation of worth goals and your company is my next worth goal.
-

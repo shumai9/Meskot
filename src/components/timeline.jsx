@@ -17,13 +17,11 @@ class Timeline extends React.Component {
 
     return (
       <div id="main" className="timeline">
-        {job.map((title, k) => {
-          return <h1 key={k}>{title}</h1>;
-        })}
         <div className="img-container">
           {place.map((title, k) => {
             return (
               <div key={k}>
+                <h1>{job[k]}</h1>
                 <img
                   className="masawino"
                   src={`${this.state.url[k]}`}

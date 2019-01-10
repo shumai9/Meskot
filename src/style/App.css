@@ -3,7 +3,7 @@
 /************************************/
 :root {
   /*text color*/
-  --bright-green-color: rgb(204, 250, 251);
+  --bright-green-color: rgb(0, 255, 102);
   --pale-dark-color: #445673;
   /*background*/
   --palegreen: #fbfbfbb3;
@@ -46,7 +46,7 @@
 }
 .App-header p {
   position: relative;
-  top: 50%;
+  top: 22rem;
   padding: 0.78%;
   font-size: large;
   border-radius: 1rem;
@@ -55,7 +55,7 @@
 
 .App-title {
   position: relative;
-  top: 46%;
+  top: 21rem;
   font-size: var(--largefont);
   color: var(--text-color);
 }
@@ -138,6 +138,7 @@ aside {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(3, auto);
   grid-gap: 15px 15px;
+  padding: 15px;
 }
 img.badge {
   position: absolute;
@@ -205,6 +206,14 @@ img.badge {
   display: grid;
   grid-template-columns: 2fr;
   border-block-start: 1px solid #ccc;
+}
+@media only screen and (orientation: landscape) and (max-height: 450px) {
+  .App-header p {
+    top: 5rem;
+  }
+  .App-title {
+    top: 4rem;
+  }
 }
 /****************
   ***For Tablets***

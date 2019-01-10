@@ -2,12 +2,17 @@
   "about": {
     "intro": ["About Me"],
     "body": [
-      "Professionally, I'm Full Stack Software Engineer. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces while being clean and efficient behind the scenes. My skill set spans from front-end design and implementations to back-end development. I enjoy each aspect, and love building sites & mobile web apps from start to finish.",
-      "Although trained as Biotechnologist at University of Asmara, I shifted my career to follow my passion in technology and fully immersed myself in the world of software programming. I am forever passionate and innovative about learning new technology and expanding my knowledge with many technologies that power the web.",
-      "As full-stack Web Developer living close to London, I able to reach out and work for clients all over the world. I'm available for remote work and should you fancy building something together hit the link below.",
-      "Personally, I'm married and a proud father. I enjoy listening to jazz music while programming. When on my creative zone I sketch, paint and play keyboard among other things."
+      "Professionally, I'm a full stack software engineer. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces while being clean and efficient behind the scenes. My skill set spans from front-end design and implementations to back-end development. I enjoy each aspect, and love building sites & mobile web apps from start to finish.",
+      "Although trained as Biotechnologist at the University of Asmara, I shifted my career to follow my passion in technology and fully immersed myself in the world of software programming. I am forever passionate and innovative about learning new technology and expanding my knowledge with many technologies that power the web.",
+      "As developer living close to London, I am able to reach out and work for clients all over the world. I'm available for remote work and should you fancy building something together hit the link below.",
+      "Personally, I am a humble, patient and agreeable. I'm married and a proud father. I enjoy listening to jazz music while programming. When I am on my creative zone I sketch, paint or play keyboard among other things."
     ],
-    "status": [
+    "tech": [
+      "Postgres",
+      "Redis",
+      "Rspec",
+      "Minitest",
+      "CircleCI",
       "Git",
       "Bash-Cli",
       "Ruby",
@@ -22,7 +27,7 @@
       "Jekyll",
       "Sinatra",
       "Padrino",
-      "linux Os",
+      "Linux Os",
       "AWS"
     ],
     "img": [
@@ -34,10 +39,10 @@
   "home": {
     "intro": ["My Story"],
     "body": [
-      "Run's like this... born and lived in Eritrea untill the age of 30, where I acheived a diploma in Marine Microbiology and carried on later to get BSc Marine Biotechnology. After finishing college, I knew deep down that I had to make a critical decision that could turn my life arround. The reality is my country had been broken and managed by a corrupt leadership for a couple of decades with no hope for reforms of any kind. But the killings and abdactions of innocent citizens and indefinit natinal service continued to hount the country.To top it up a super inflated economy rendered my country an bearable to live. I had to leave.",
-      "Although it was incredibly hard to leave my home town, I left in the beginning of 2013, due to political instability and sought refuge in UN refugee camps in Ethiopia. I still recall the mixed feelings of loss, joy and excitement of starting all over again. My starting-over got even better when I met my soul mate there. Since then we got married and living happily ever after.",
-      "Before finally settling in the UK My wife and I travelled to Sudan, South Sudan, Uganda, UAE, Srilanka. I enjoy travel and love admiring beauty in nature particularly gazing at the mesmerizing colorful sun raise and set. Here are some photos I have taken during such expierence.",
-      "It's said ' success is the progressive realization of worthy goals  and I believe I am on a journey In an endless desire to acheive great things in life."
+      "Flows like this... born and lived in Eritrea until the age of 30, where I achieved a diploma in Marine Microbiology and carried on later to get BSc Marine Biotechnology. After finishing college, I knew that I had to make a critical decision that could turn my life around for better or worse. The reality is, my country is broken and managed by a corrupt leadership for the last couple of decades, with no hope for reforms of any kind. But the killings and abductions of innocent citizens and indefinite national service continued to haunt the country. On top of that, a super inflated economy rendered my country unbearable to live. So I had to leave.",
+      "Although it was incredibly hard to leave my home town, I left at the beginning of 2013, due to political instability and sought refuge in UN refugee camps in Ethiopia. I still recall the mixed feelings of loss, joy, and excitement of starting all over again. My starting-over got even better when I met my soul mate there. Since then we got married and living happily ever after.",
+      "Before finally settling in the UK My wife and I traveled to Sudan, South Sudan, Uganda, UAE, Srilanka. I enjoy travel and love admiring beauty in nature particularly gazing at the mesmerizing colorful sunrise and sunset. Here are some photos I have taken during such experience.",
+      "It's said ' success is the progressive realization of worthy goals  and I believe I am on a journey In an endless desire to achieve great things in life."
     ],
 
     "catch": ["Tell a joke", "I know that joke"],
@@ -63,22 +68,29 @@
     "img": []
   },
   "projects": {
-    "title": ["Hilina", "Banta", "Go-chef"],
-    "aim": [
-      "Provide solution in making finacial decision ",
-      "Create a real-time communication and chat web-app",
-      "To provide local chefs a felxible access to gigs"
+    "title": ["Hilina", "Banta", "Go-chef", "Berana"],
+    "tech": [
+      "Ruby on Rails, Postgres, Webpack, React.Js, CSS3, HTML5 ",
+      "Ruby on Rails, Postgres, React.Js, Action cable& websockets, CSS3, HTML5",
+      "Ruby on Rails, Postgres, JavaScript, HTML5 and CSS3 ",
+      "Ruby on Rails, SQLite3, JavaScript, HTML5 and CSS3"
     ],
-    "time": ["One month", "Thre Days", "two weeks"],
+    "time": ["One month", "Three Days", "two weeks"],
     "summary": [
-      "This project was very successful task",
-      "what ever it is do it now",
-      "they all get done"
+      "A final project at We Got Coders, aimed at simplifing financial decision making by providing user real-time net-worth status",
+      "Aimed at create a real-time communication/chat web-app",
+      "Set up to provide local chefs a felxible access to gigs",
+      " Berana is a goup project (aka Note) aimed at creating a note taking web application "
     ],
-    "img": ["assets/aws.jpg", "assets/Berana.jpg", "assets/aws.jpg"]
+    "img": [
+      "assets/hilina.jpg",
+      "assets/banta.jpg",
+      "assets/gochef.jpg",
+      "assets/Berana.jpg"
+    ]
   },
   "timeline": {
-    "career": ["Web Development"],
+    "career": ["Web Development", "Compliance Officer", "QC Lab Technician"],
     "places": ["Asmara", "Keren", "Massawa"],
     "date": ["1984", "2000", "2012", "2013"],
     "img": [
@@ -89,7 +101,10 @@
   },
   "footer": {
     "rights": ["© 2018"],
-    "feeds": ["news about my brand/blog", "what is shumai up to?"],
+    "feeds": [
+      "News about my brand/blog",
+      "Current projects shumai is working on..."
+    ],
     "quotes": [
       "Home is where heart is",
       "Your limitation—it's only your imagination.",

@@ -13,7 +13,7 @@ class About extends React.Component {
   render() {
     const title = this.props.data.intro;
     const body = this.props.data.body;
-    const status = this.props.data.status;
+    const tech = this.props.data.tech;
     const url = this.props.data.img;
     const headingStyle = {
       background: 'no-repeat 100% 50% url(' + url[1] + ')',
@@ -48,7 +48,7 @@ class About extends React.Component {
         </Link>
         <p>Here's a few things I'm experienced with:</p>
         <ul className="skills">
-          {status.map((text, k) => {
+          {tech.map((text, k) => {
             return (
               <li className="lang" key={k}>
                 {text}

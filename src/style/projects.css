@@ -1,2 +1,10 @@
 div.proj {
+  display: flex;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+div.subpro {
+  flex: 2;
+  padding: 10px;
 }

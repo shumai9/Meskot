@@ -78,4 +78,10 @@ div .open,
     scroll-snap-points-x: repeat(100%);
     display: block;
   }
+  .App-header p {
+    top: 5rem;
+  }
+  .App-title {
+    top: 4rem;
+  }
 }
