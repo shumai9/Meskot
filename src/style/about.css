@@ -29,7 +29,6 @@
 }
 .about h1 {
   margin: 0;
-  text-align: left;
 }
 /*mgrove@svcgroup.c */
 @media only screen and (min-width: 100px) and (max-width: 960px) {
@@ -38,5 +37,6 @@
   }
   .about .masawino {
     width: 100%;
+    text-align: left;
   }
 }
