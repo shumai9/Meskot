@@ -9,14 +9,15 @@ img.opened {
   z-index: 150;
 }
 .option a {
+  font-size: var(--mediumfont);
   display: block;
-  margin: 20% 43% 20% 11%;
+  margin: 30%;
   max-width: 100%;
 }
 
 .option nav {
   display: block;
-  width: 14rem;
+  width: 12rem;
   height: auto;
   background: rgba(14, 69, 84, 0.74);
   z-index: 10;

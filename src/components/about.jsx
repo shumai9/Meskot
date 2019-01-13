@@ -56,7 +56,6 @@ class About extends React.Component {
             );
           })}
         </ul>
-        <img className="masawino" src={url[0]} alt="massawa" />
       </div>
     );
   }

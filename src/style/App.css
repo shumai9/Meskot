@@ -10,8 +10,8 @@
   --nav-sandycolor: #fce6ba;
   --orange-color: #c95f12;
   --header-img: url('/assets/nef.jpg') 50% 50% no-repeat;
-  /*font-style*/
-  --title-font: 'Philosopher', Diplomata, cursive;
+  /*font-style*/ /*
+  --title-font: 'Diplomata', cursive;*/
   --para-font: 'Philosopher';
   --esp-style: 'Petit Formal Script', cursive;
   --footer-bg: linear-gradient(#031d2f, #002);
@@ -108,13 +108,14 @@ aside {
   background: var(--palegreen);
 }
 .text-container {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  border-block-start: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .lang,
 .para {
-  align-self: auto;
 }
 
 /**********************************\
@@ -131,7 +132,7 @@ aside {
   align-items: center;
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(3, auto);
   grid-gap: 15px 15px;
   padding: 15px;
@@ -159,6 +160,7 @@ img.badge {
   a {
     font-size: var(--smallfont);
     font-family: var(--para-font);
+    color: green;
   }
 
   .option {
@@ -174,14 +176,13 @@ img.badge {
     position: relative;
     /*width: 100vw;*/
   }
-  .main {
-    display: block;
-    width: auto;
-    flex-wrap: wrap;
-  }
+
   aside {
     width: 100%;
-    min-height: 40rem;
+    min-height: 100%;
+  }
+  .about h1 {
+    text-align: left;
   }
   .masawino {
     width: 100%;
@@ -193,11 +194,7 @@ img.badge {
     box-shadow: unset;
   }
 }
-.text-container {
-  display: grid;
-  grid-template-columns: 2fr;
-  border-block-start: 1px solid #ccc;
-}
+
 @media only screen and (orientation: landscape) and (max-height: 450px) {
   .App-header p {
     top: 5rem;
@@ -215,13 +212,13 @@ img.badge {
   h2,
   h3,
   h4 {
-    font-size: var(--mediumfont);
+    font-size: var(--largefont);
   }
   p,
   i,
   em,
   a {
-    font-size: var(--smallfont);
+    font-size: var(--mediumfont);
   }
   .option {
     display: block;
@@ -261,10 +258,11 @@ img.badge {
   ***For Desktops & Tablets***
   ****************************/
 @media all and (min-width: 651px) {
-  .text-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    border-block-start: 1px solid #ccc;
+  .main {
+    position: relative;
+    left: 15%;
+    right: 15%;
+    width: 70%;
   }
 }
 /***
@@ -276,8 +274,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-font);
-  font-size: var(--mediumfont);
+  font-family: var(--para-font);
+  font-size: var(--largefont);
   color: var(--pale-dark-color);
   padding: 15px;
   text-align: center;
@@ -297,7 +295,8 @@ a:hover {
   color: var(--orange-color);
 }
 #esp {
-  font-family: var(--esp-style);
+  font-family: var(--para-style);
+  font-weight: bold;
 }
 .icon {
   width: 70px;
