@@ -35,8 +35,8 @@
   .skills {
     grid-template-columns: repeat(2, 1fr);
   }
-  .about .ma.sawino {
-    width: 100%;
+  .about h1 {
+    height: 45rem;
     text-align: left;
   }
 }

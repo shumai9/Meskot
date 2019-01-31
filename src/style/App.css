@@ -183,6 +183,7 @@ img.badge {
   }
   .about h1 {
     text-align: left;
+    height: 45vh;
   }
   .masawino {
     width: 100%;
@@ -243,6 +244,10 @@ img.badge {
   }
   img {
     width: 100%;
+  }
+  .about h1 {
+    text-align: left;
+    height: 45vh;
   }
 }
 
