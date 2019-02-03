@@ -11,15 +11,18 @@ class Option extends React.Component {
   }
   render() {
     return this.props.menuIsOpen ? (
-      <div className="option open" onClick={this.onMenuToggle}>
+      <div className="option openlist" onClick={this.onMenuToggle}>
         <div id="net">
-          <img className="icon opened" src="/assets/option-close.svg " alt="" />
+          {/* this div with id net is to catch click event so user 
+          can close menu by clicking anywhere on the screen */}
+          <img className="icon close" src="/assets/option-close.svg " alt="" />
         </div>
-        {this.props.menuIsOpen ? <Nav /> : null}
+        <Nav />
       </div>
     ) : (
-      <div className="option close" onClick={this.onMenuToggle}>
-        <img className="icon closed" src="/assets/option-open.svg" alt="" />
+      <div className="option closedmenu" onClick={this.onMenuToggle}>
+        <img className="icon menu" src="/assets/option-open.svg" alt="" />
+        {null}
       </div>
     );
   }

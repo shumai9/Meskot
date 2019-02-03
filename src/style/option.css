@@ -1,8 +1,8 @@
-div .open,
-.close,
+div .openlist,
+.closedmenu,
 .option nav,
-img.closed,
-img.opened {
+img.menu,
+img.close {
   position: absolute;
   right: 1px;
   top: 1px;
@@ -24,8 +24,8 @@ img.opened {
   border-radius: 12px 3px;
 }
 
-.option .opened,
-.option .closed {
+.option .close,
+.option .menu {
   display: inline-block;
 }
 
@@ -54,7 +54,7 @@ img.opened {
 .option nav a:not(:first-child):hover {
   color: #000;
 }
-div .open,
+div .openlist,
 .close {
   position: fixed;
   top: 2px;

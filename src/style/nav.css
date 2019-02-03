@@ -50,16 +50,3 @@ nav a:first-child {
 .list a {
   color: var(--pale-dark-color);
 }
-
-#cross-arrow,
-#list-boat {
-  display: inline;
-  position: absolute;
-  right: 0;
-  top: 10px;
-}
-/*.active {
-  background-color: #fdaa12;
-  border-radius: 5rem;
-}
-*/
