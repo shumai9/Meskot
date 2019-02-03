@@ -11,27 +11,20 @@ import Option from './components/option.jsx';
 import json from './data/data.json';
 import './style/App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import anime from 'animejs/lib/anime.es.js';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentWidth: window.innerWidth,
-      open: false
+      menuIsOpen: false
     };
     this.handleDevice = () => {
       this.setState({ currentWidth: window.innerWidth });
     };
     this.toggleOptionsMenu = () => {
-      if (this.state.open) {
-        this.setState({
-          open: !this.state.open
-        });
-      } else {
-        this.setState({
-          open: !this.state.open
-        });
-      }
+      this.setState({ menuIsOpen: !this.state.menuIsOpen });
     };
     this.badgeHandler = this.badgeHandler.bind(this);
     this.setTitle = this.setTitle.bind(this);
@@ -61,8 +54,19 @@ class App extends Component {
   componentDidCatch(error) {
     console.log('logged error', error.message);
   }
+  //animation experment
+
   render() {
-    const open = this.state.open;
+    const man = document.querySelector('.anime');
+    console.log('man loged', man);
+
+    anime({
+      targets: man,
+      translateX: 250,
+      rotate: '1turn',
+      backgroundColor: '#FFF',
+      duration: 800
+    });
     return (
       <MuiThemeProvider>
         <Router>
@@ -71,13 +75,14 @@ class App extends Component {
               <h1 className="App-title">
                 Hey, I'm <br /> Shumai
               </h1>
+              <div className="anime">Man</div>
               <p id="intro">Welcome! to my site ~ under construction</p>
               {this.state.currentWidth >= 960 ? (
                 <Nav />
               ) : (
                 <Option
-                  open={open}
-                  toggleOptionsMenu={this.toggleOptionsMenu}
+                  menuIsOpen={this.state.menuIsOpen}
+                  onMenuToggle={this.toggleOptionsMenu}
                 />
               )}
             </header>

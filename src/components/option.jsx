@@ -5,24 +5,20 @@ import '../style/option.css';
 class Option extends React.Component {
   constructor(props) {
     super(props);
-    this.toggleMenu = this.toggleMenu.bind(this);
+    this.onMenuToggle = () => {
+      this.props.onMenuToggle();
+    };
   }
-  toggleMenu(e) {
-    e.stopPropagation();
-    this.props.toggleOptionsMenu();
-  }
-
   render() {
-    const open = this.props.open;
-    return open ? (
-      <div className="option open" onClick={this.toggleMenu}>
+    return this.props.menuIsOpen ? (
+      <div className="option open" onClick={this.onMenuToggle}>
         <div id="net">
           <img className="icon opened" src="/assets/option-close.svg " alt="" />
         </div>
-        {open ? <Nav /> : null}
+        {this.props.menuIsOpen ? <Nav /> : null}
       </div>
     ) : (
-      <div className="option close" onClick={this.toggleMenu}>
+      <div className="option close" onClick={this.onMenuToggle}>
         <img className="icon closed" src="/assets/option-open.svg" alt="" />
       </div>
     );
