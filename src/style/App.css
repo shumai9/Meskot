@@ -54,6 +54,7 @@
   top: 21rem;
   font-size: var(--largefont);
   color: var(--text-color);
+  color: rgb(7, 250, 149);
 }
 #intro {
   color: var(--bright-green-color);
@@ -65,7 +66,7 @@
   top: -7px;
   left: 0px;
   animation: App-logo-spin infinite 10s cubic-bezier(1, -0.09, 0.44, 0.93);
-  width: 14px;
+  width: 3rem;
   margin-left: 2rem;
 }
 @keyframes App-logo-spin {
@@ -302,7 +303,7 @@ a:hover {
   font-weight: bold;
 }
 .icon {
-  width: 70px;
+  width: 40px;
 }
 #main {
   padding-top: 4rem;

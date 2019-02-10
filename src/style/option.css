@@ -55,10 +55,11 @@ img.close {
   color: #000;
 }
 div .openlist,
-.close {
+.close,
+img.menu {
   position: fixed;
-  top: 2px;
-  right: 2px;
+  top: 4px;
+  right: 4px;
 }
 #net {
   height: 100vh;

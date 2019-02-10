@@ -58,15 +58,13 @@ class App extends Component {
 
   render() {
     const man = document.querySelector('.anime');
-    console.log('man loged', man);
-
-    anime({
-      targets: man,
-      translateX: 250,
-      rotate: '1turn',
-      backgroundColor: '#FFF',
-      duration: 800
-    });
+    // anime({
+    //   targets: man,
+    //   translateX: 250,
+    //   rotate: '1turn',
+    //   backgroundColor: '#FFF',
+    //   duration: 800
+    // });
     return (
       <MuiThemeProvider>
         <Router>
@@ -75,8 +73,6 @@ class App extends Component {
               <h1 className="App-title">
                 Hey, I'm <br /> Shumai
               </h1>
-              <div className="anime">Man</div>
-              <p id="intro">Welcome! to my site ~ under construction</p>
               {this.state.currentWidth >= 960 ? (
                 <Nav />
               ) : (
@@ -91,8 +87,8 @@ class App extends Component {
                 <h2>More of me</h2>
                 <span onClick={this.badgeHandler}>
                   <img
-                    className="aside-close icon"
-                    src="/assets/option-close.svg"
+                    className="icon close"
+                    src="/assets/cross-icon.svg"
                     alt=""
                   />
                 </span>

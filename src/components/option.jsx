@@ -15,13 +15,13 @@ class Option extends React.Component {
         <div id="net">
           {/* this div with id net is to catch click event so user 
           can close menu by clicking anywhere on the screen */}
-          <img className="icon close" src="/assets/option-close.svg " alt="" />
+          <img className="icon close" src="/assets/cross-icon.svg " alt="" />
         </div>
         <Nav />
       </div>
     ) : (
       <div className="option closedmenu" onClick={this.onMenuToggle}>
-        <img className="icon menu" src="/assets/option-open.svg" alt="" />
+        <img className="icon menu" src="/assets/ship-icon.svg" alt="" />
         {null}
       </div>
     );
