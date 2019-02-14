@@ -1,7 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 #client secrets
 /secret
-
+#GOOGLE_ANALITICS_ID
+.env
 # dependencies
 /node_modules
 

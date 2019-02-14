@@ -13,6 +13,8 @@ import './style/App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import anime from 'animejs/lib/anime.es.js';
 
+const googleAna_TrackingId = `${process.env.GOOGLE_ANALITICS_ID}`;
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -40,16 +42,34 @@ class App extends Component {
 
     e.stopPropagation();
     if (badge.style.transform === 'translate3d(-15vw, 0px, 0px)') {
+      anime({
+        targets: badgeIcon,
+        translateX: 25,
+        rotate: '1turn',
+        duration: 800
+      });
       badge.style.transform = 'translate3d(-170vw, 0px, 0px)';
       badge.style.transition = 'transform .5s cubic-bezier(0, .52, 0, 1)';
       badgeIcon.style.display = '';
     } else {
+      anime({
+        targets: badgeIcon,
+        translateX: 0,
+        rotate: '1turn',
+        duration: 800
+      });
       badge.style.transform = 'translate3d(-15vw, 0px, 0px)';
       badgeIcon.style.display = 'none';
     }
   };
   componentDidMount() {
     window.addEventListener('resize', this.handleDevice);
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', googleAna_TrackingId);
   }
   componentDidCatch(error) {
     console.log('logged error', error.message);
@@ -57,14 +77,6 @@ class App extends Component {
   //animation experment
 
   render() {
-    const man = document.querySelector('.anime');
-    // anime({
-    //   targets: man,
-    //   translateX: 250,
-    //   rotate: '1turn',
-    //   backgroundColor: '#FFF',
-    //   duration: 800
-    // });
     return (
       <MuiThemeProvider>
         <Router>

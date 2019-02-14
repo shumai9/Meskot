@@ -64,7 +64,11 @@
       "https://www.linkedin.com/in/soazd1/",
       "https://twitter.com/ocbayes"
     ],
-    "img": []
+    "img": [
+      "assets/git-icon.svg",
+      "assets/linkedin-icon.svg",
+      "assets/twitter-icon.svg"
+    ]
   },
   "projects": {
     "title": ["Hilina", "Banta", "Go-chef", "Berana"],
