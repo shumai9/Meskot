@@ -174,7 +174,7 @@ class App extends Component {
                 )}
               />
             </div>
-            <Footer data={json.footer} />
+            <Footer data={json} />
           </div>
         </Router>
       </MuiThemeProvider>

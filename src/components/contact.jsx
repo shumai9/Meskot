@@ -21,10 +21,9 @@ class Contact extends React.Component {
         <h5>Profile links:</h5>
         {links.map((text, k) => {
           return (
-            <div key={k}>
+            <div id="links" key={k}>
               <a href={`${text}`} target="_blank">
-                <img className="icon" src={url[k]} alt={`${name[k]}`} />{' '}
-                {name[k]}
+                <img className="icon" src={url[k]} alt={`${name[k]}`} />
               </a>
             </div>
           );

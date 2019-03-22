@@ -5,8 +5,8 @@ class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      quotes: this.props.data.quotes,
-      feeds: this.props.data.feeds
+      quotes: this.props.data.footer.quotes,
+      feeds: this.props.data.footer.feeds
     };
     this.randomQuoter = this.randomQuoter.bind(this);
   }
@@ -20,7 +20,10 @@ class Footer extends React.Component {
   };
 
   render() {
-    const copyright = this.props.data.rights;
+    const copyright = this.props.data.footer.rights;
+    const links = this.props.data.contact.links;
+    const url = this.props.data.contact.img;
+    const name = ['Github', 'LinkIn', 'Twitter'];
     return (
       <div className="footer">
         <div>
@@ -32,9 +35,17 @@ class Footer extends React.Component {
             );
           })}
         </div>
-
         <p>{copyright}</p>
         <h6 className="quote">' {this.randomQuoter()} '</h6>
+        {links.map((text, k) => {
+          return (
+            <span key={k}>
+              <a href={`${text}`} target="_blank">
+                <img className="icon" src={url[k]} alt={`${name[k]}`} />
+              </a>
+            </span>
+          );
+        })}
       </div>
     );
   }
