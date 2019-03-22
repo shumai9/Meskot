@@ -5,9 +5,6 @@
   line-height: 150%;
 }
 
-div.LI-profile-badge {
-  /*z-index: -1;*/
-}
 div.LI-profile-badge .LI-badge-container.vertical.light {
   position: sticky;
   -webkit-box-shadow: var(--app-shadow);

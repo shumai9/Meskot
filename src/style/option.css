@@ -19,7 +19,7 @@ img.close {
   display: block;
   width: 12rem;
   height: auto;
-  background: rgba(14, 69, 84, 0.74);
+  background: var(--footer-bg) /* rgba(14, 69, 84, 0.74)*/;
   z-index: 10;
   border-radius: 12px 3px;
 }
@@ -42,11 +42,12 @@ img.close {
   margin-left: 1px;
   text-align: left;
   border-radius: 3rem 50rem 1rem 1rem;
-  background: #fbfbfbb3;
+  background: var(--pale-lightgreen);
 }
 .option .list a.active:not(:first-child) {
   background: none;
   height: auto;
+  width: 3rem;
   border-radius: 5%;
   border-bottom: 4px solid #c95f12;
   outline: 0;
@@ -58,8 +59,10 @@ div .openlist,
 .close,
 img.menu {
   position: fixed;
-  top: 4px;
-  right: 4px;
+}
+div img.menu {
+  top: 15px;
+  right: 15px;
 }
 #net {
   height: 100vh;

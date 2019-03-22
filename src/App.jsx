@@ -8,12 +8,11 @@ import Contact from './components/contact.jsx';
 import Nav from './components/nav.jsx';
 import Footer from './components/footer.jsx';
 import Option from './components/option.jsx';
+// import Canvas from './components/canvas.jsx';
 import json from './data/data.json';
 import './style/App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import anime from 'animejs/lib/anime.es.js';
-
-const googleAna_TrackingId = `${process.env.GOOGLE_ANALITICS_ID}`;
 
 class App extends Component {
   constructor(props) {
@@ -22,7 +21,7 @@ class App extends Component {
       currentWidth: window.innerWidth,
       menuIsOpen: false
     };
-    this.handleDevice = () => {
+    this.handleDeviceWidth = () => {
       this.setState({ currentWidth: window.innerWidth });
     };
     this.toggleOptionsMenu = () => {
@@ -63,28 +62,25 @@ class App extends Component {
     }
   };
   componentDidMount() {
-    window.addEventListener('resize', this.handleDevice);
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', googleAna_TrackingId);
+    window.addEventListener('resize', this.handleDeviceWidth);
   }
   componentDidCatch(error) {
     console.log('logged error', error.message);
   }
-  //animation experment
 
   render() {
     return (
       <MuiThemeProvider>
         <Router>
           <div className="App">
-            <header className="App-header">
+            <header id="landing" className="App-header">
+              {/* <Canvas/> */}
               <h1 className="App-title">
-                Hey, I'm <br /> Shumai
+                Hey, I'm Shumai, <br />
+                Full-Stack Software Developer.
               </h1>
+              <img className="shm" src="/assets/shumai.png" alt="" />
+              {/* <button type="submit">   CTA   </button> */}
               {this.state.currentWidth >= 960 ? (
                 <Nav />
               ) : (
@@ -130,10 +126,9 @@ class App extends Component {
                 alt=""
                 onClick={this.badgeHandler}
               />
-              <Route exact path="/" render={null} />
               <Route
                 exact
-                path="/home"
+                path="/"
                 render={props => (
                   <Home {...props} data={json.home} onScroll={this.setTitle} />
                 )}

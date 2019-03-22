@@ -6,12 +6,12 @@
   display: block;
   /* height: 31rem; */
   width: 100%;
-  background: var(--footer-bg, #ccc);
+  background: var(--footer-bg);
   color: var(--text-color);
   padding: 5% 0%;
 }
 div.footer p {
-  font-size: var(--smallfont);
+  font-size: var(--mediumfont);
   color: var(--text-color);
 }
 

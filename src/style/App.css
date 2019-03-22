@@ -3,27 +3,37 @@
 /************************************/
 :root {
   /*text color*/
-  --bright-green-color: rgb(0, 255, 102);
   --pale-dark-color: #445673;
+  --text-color: #fff;
   /*background*/
-  --palegreen: #fbfbfbb3;
-  --nav-sandycolor: #fce6ba;
-  --orange-color: #c95f12;
-  --header-img: url('/assets/nef.jpg') 50% 50% no-repeat;
+  --master-bg: linear-gradient(to left, var(--orange-color), #00ff8a, #021b2e);
+  --pale-lightgreen: #dbf9cd;
+  --orange-color: #ff9e20; /* #fffc2b;*/
   /*font-style*/ /*
   --title-font: 'Diplomata', cursive;*/
   --para-font: 'Philosopher';
   --esp-style: 'Petit Formal Script', cursive;
-  --footer-bg: linear-gradient(#031d2f, #002);
-  --text-color: #30ff7b;
+  --footer-bg: linear-gradient(to right, var(--orange-color), #00ff8a, #021b2e);
+
   /*font size*/
-  --largefont: 30px;
+  --largefont: 35px;
   --mediumfont: 16px;
   --smallfont: 12px;
   /*shadow*/
   --app-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
-
+.shm {
+  width: 20rem;
+  position: absolute;
+  left: 0rem;
+  top: 0%;
+  border-radius: 12rem 10rem;
+  border: 5rem dashed #fe9a2b;
+  box-shadow: var(--app-shadow);
+  -webkit-box-shadow: var(--app-shadow);
+  -moz-box-shadow: var(--app-shadow);
+  z-index: 30;
+}
 .App,
 .App-title,
 #intro {
@@ -35,7 +45,7 @@
 /************************************/
 .App-header {
   position: relative;
-  background: var(--header-img);
+  background: var(--master-bg);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -51,10 +61,11 @@
 
 .App-title {
   position: relative;
-  top: 21rem;
+  top: 60%;
   font-size: var(--largefont);
   color: var(--text-color);
-  color: rgb(7, 250, 149);
+  color: #fff;
+  z-index: 50;
 }
 #intro {
   color: var(--bright-green-color);
@@ -63,11 +74,10 @@
 /*Logo animation*/
 .App-logo {
   position: absolute;
-  top: -7px;
-  left: 0px;
+  top: -21rem;
+  left: 45%;
   animation: App-logo-spin infinite 10s cubic-bezier(1, -0.09, 0.44, 0.93);
-  width: 3rem;
-  margin-left: 2rem;
+  width: 12rem;
 }
 @keyframes App-logo-spin {
   from {
@@ -86,9 +96,8 @@
 aside {
   transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
   transform: translate3d(-170vw, 0, 0);
-  width: 17rem;
-  /*min-height: 40rem;*/
-  background: #ccc;
+  width: 25rem;
+  background: var(--pale-lightgreen);
   position: absolute;
   height: 100%;
 }
@@ -116,15 +125,12 @@ aside {
   text-align: justify;
   text-justify: inter-word;
 }
-.lang,
-.para {
-}
-
 /**********************************\
 /          Image style......        \ 
 /************************************/
 /*Image style*/
-.masawino {
+.masawino,
+aside {
   -webkit-box-shadow: var(--app-shadow);
   -moz-box-shadow: var(--app-shadow);
   box-shadow: var(--app-shadow);
@@ -177,10 +183,6 @@ img.badge {
     /*width: 100vw;*/
   }
 
-  aside {
-    width: 100%;
-    height: 166%;
-  }
   .about h1 {
     text-align: left;
     height: 45vh;
@@ -229,10 +231,7 @@ img.badge {
     width: 100%;
     flex-wrap: wrap;
   }
-  aside {
-    width: 100%;
-    height: 166%;
-  }
+
   .masawino {
     width: 100%;
   }
@@ -307,5 +306,5 @@ a:hover {
   width: 40px;
 }
 #main {
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
