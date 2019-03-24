@@ -19,7 +19,8 @@ class About extends React.Component {
       background: 'no-repeat 100% 50% url(' + url[1] + ')',
       backgroundsize: 'cover',
       height: '20vh',
-      width: '100%'
+      width: '100%',
+      opacity: '0.5'
     };
 
     return (

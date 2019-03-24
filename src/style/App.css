@@ -23,16 +23,12 @@
   --app-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 .shm {
-  width: 20rem;
+  width: 35rem;
   position: absolute;
-  left: 0rem;
-  top: 0%;
-  border-radius: 12rem 10rem;
-  border: 5rem dashed #fe9a2b;
-  box-shadow: var(--app-shadow);
-  -webkit-box-shadow: var(--app-shadow);
-  -moz-box-shadow: var(--app-shadow);
+  right: 0;
+  top: 3.7rem;
   z-index: 30;
+  opacity: 0.3;
 }
 .App,
 .App-title,
