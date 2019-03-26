@@ -26,14 +26,11 @@ class About extends React.Component {
     return (
       <div id="main" className="about">
         <div>
+          <img className="shm" src="/assets/shumai.png" alt="" />
           {title.map((text, i) => {
-            return (
-              <h1 style={headingStyle} key={i}>
-                {text}
-              </h1>
-            );
+            return <h1 key={i}>{text}</h1>;
           })}
-          <div className="text-container">
+          <div className="about-text">
             {body.map((text, j) => {
               return (
                 <p className={`para ${j}`} key={j}>

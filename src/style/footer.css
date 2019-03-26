@@ -18,11 +18,14 @@ div.footer p {
 .quote {
   position: relative;
   bottom: 0;
-  height: auto;
+  height: 8rem;
   color: #ffc;
   font-family: var(--esp-style);
   background: radial-gradient(rgba(3, 3, 3, 0.253), rgba(204, 204, 204, 0.164));
   margin: 0;
   font-size: var(--mediumfont);
   font-weight: 200;
+}
+.footer .icon:hover {
+  filter: url('/assets/filter.svg#filter-links-color');
 }

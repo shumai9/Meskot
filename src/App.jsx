@@ -79,7 +79,6 @@ class App extends Component {
                 Hey, I'm Shumai, <br />
                 Full-Stack Software Developer.
               </h1>
-              <img className="shm" src="/assets/shumai.png" alt="" />
               {/* <button type="submit">   CTA   </button> */}
               {this.state.currentWidth >= 960 ? (
                 <Nav />

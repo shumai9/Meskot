@@ -36,7 +36,6 @@ class Footer extends React.Component {
           })}
         </div>
         <p>{copyright}</p>
-        <h6 className="quote">' {this.randomQuoter()} '</h6>
         {links.map((text, k) => {
           return (
             <span key={k}>
@@ -46,6 +45,7 @@ class Footer extends React.Component {
             </span>
           );
         })}
+        <h6 className="quote">' {this.randomQuoter()} '</h6>
       </div>
     );
   }

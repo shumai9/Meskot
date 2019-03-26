@@ -22,14 +22,6 @@
   /*shadow*/
   --app-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
-.shm {
-  width: 35rem;
-  position: absolute;
-  right: 0;
-  top: 3.7rem;
-  z-index: 30;
-  opacity: 0.3;
-}
 .App,
 .App-title,
 #intro {
@@ -177,11 +169,6 @@ img.badge {
   div.LI-profile-badge {
     position: relative;
     /*width: 100vw;*/
-  }
-
-  .about h1 {
-    text-align: left;
-    height: 45vh;
   }
   .masawino {
     width: 100%;

@@ -1,12 +1,6 @@
-.about {
-  background: #38d;
-  display: flex;
-  flex-direction: column;
-}
-#about-me {
-  background: no-repeat 50% 50%
-    url(https://lh3.googleusercontent.com/eQyGuYXulRSpl76_vJQLgZuXxIT71LKHfzgifORnCEebXj8u89xl6FxeAZCQ4J7j3LQj0PMMh4TawwMlsrNicoquAYu8LH0fNSv2Jjk66vwTaApGyJfAtnaldz4Nmqq_EKlm-CArXTmtaqWi5Q_fnFrk0fLkjxkFYxmxMagwdFvu648KLxratm4AcPvldlHLUmxvB7yeaSCp5GN09aUTbt0hbc9mlhzhueqU8x642rg02uN0K9dWY8ffy28lsRXahGneUmlNUSH55tnZOejYZnCaPSvlMEiFdkvJsRrVJQiAj76cb92t2b5lovyxdjtdnnzzwxlfulic77120fjtuiget8kcgmr5hukeeigazhxdbvmfr13mwfz2xlN4IQVqbDLOXOs4p1dAa4WoveIVS97aJ6onGEN7L498fLd_IyUUucDIPRpzoBvL2ChpTf9L6Cw8vXYZUqe-hklgSbR8uBCNnII6yyrjZXNv1QU4tkDhjhJvaq8yyrEhRo2-oefnHY9_RdiuQtZCCPugolmjVr_n2J_T-udgFQ8ZTMsojmEz7aZFhe7rfkYFWqAMyDIOKzUrnpBFfkD7wiV0ailYZel-pjRFW95Y-KY1xDq0iSoVqDIdvp3ZOyqCXuBLub9w258oLsH9xG-7tueow_ajxcht=w896-h672-no);
-  height: 100%;
+.about-text {
+  text-align: justify;
+  padding: 5px;
 }
 .skills {
   display: -webkit-grid;
@@ -30,13 +24,28 @@
 .about h1 {
   margin: 0;
 }
+.shm {
+  width: 18rem;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  border-radius: 51% 0rem;
+  background: var(--master-bg);
+  box-shadow: var(--app-shadow);
+}
 /*mgrove@svcgroup.c */
 @media only screen and (min-width: 100px) and (max-width: 960px) {
+  .about-text {
+    text-align: justify;
+  }
   .skills {
     grid-template-columns: repeat(2, 1fr);
   }
   .about h1 {
-    height: 45rem;
-    text-align: left;
+    height: 5rem;
+  }
+  .shm {
+    width: 10rem;
+    padding: 0;
   }
 }
