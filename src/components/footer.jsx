@@ -24,6 +24,7 @@ class Footer extends React.Component {
     const links = this.props.data.contact.links;
     const url = this.props.data.contact.img;
     const name = ['Github', 'LinkIn', 'Twitter'];
+
     return (
       <div className="footer">
         <div>

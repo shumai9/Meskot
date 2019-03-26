@@ -14,15 +14,6 @@ class About extends React.Component {
     const title = this.props.data.intro;
     const body = this.props.data.body;
     const tech = this.props.data.tech;
-    const url = this.props.data.img;
-    const headingStyle = {
-      background: 'no-repeat 100% 50% url(' + url[1] + ')',
-      backgroundsize: 'cover',
-      height: '20vh',
-      width: '100%',
-      opacity: '0.5'
-    };
-
     return (
       <div id="main" className="about">
         <div>

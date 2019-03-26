@@ -173,7 +173,7 @@ class App extends Component {
                 )}
               />
             </div>
-            <Footer data={json} />
+            <Footer anime={anime} data={json} />
           </div>
         </Router>
       </MuiThemeProvider>
