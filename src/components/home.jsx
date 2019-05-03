@@ -35,6 +35,7 @@ class Home extends React.Component {
             );
           })}
         </div>
+        <h4>A photo is more than a 1000 words</h4>
         <div className="img-container">
           {url.map((text, l) => {
             return <img className="masawino" src={text} key={l} alt={`${l}`} />;

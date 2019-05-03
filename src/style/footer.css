@@ -25,6 +25,3 @@ div.footer p {
   font-size: var(--mediumfont);
   font-weight: 200;
 }
-.footer .icon:hover {
-  filter: url('/assets/filter.svg#filter-links-color');
-}
