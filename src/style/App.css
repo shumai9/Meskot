@@ -6,15 +6,27 @@
   --pale-dark-color: #445673;
   --text-color: #fff;
   /*background*/
-  --master-bg: linear-gradient(to left, var(--orange-color), #00ff8a, #021b2e);
-  --pale-lightgreen: #dbf9cd;
+  --first-color: #faa209b3 /*#ff9e20*/;
+  --second-color: #b24a4a; /* #00ff8a;*/
+  --third-color: #021b2e;
   --orange-color: #ff9e20; /* #fffc2b;*/
+  --master-bg: linear-gradient(
+    to left,
+    var(--first-color),
+    var(--second-color),
+    var(--third-color) /*#00ff8a, #021b2e*/
+  );
+  --pale-lightgreen: #dbf9cd;
   /*font-style*/ /*
   --title-font: 'Diplomata', cursive;*/
   --para-font: 'Philosopher';
   --esp-style: 'Petit Formal Script', cursive;
-  --footer-bg: linear-gradient(to right, var(--orange-color), #00ff8a, #021b2e);
-
+  --footer-bg: linear-gradient(
+    to right,
+    var(--first-color),
+    var(--second-color),
+    var(--third-color)
+  );
   /*font size*/
   --largefont: 35px;
   --mediumfont: 16px;
@@ -62,10 +74,11 @@
 /*Logo animation*/
 .App-logo {
   position: absolute;
-  top: -21rem;
-  left: 45%;
+  top: -40rem;
+  right: 0;
   animation: App-logo-spin infinite 10s cubic-bezier(1, -0.09, 0.44, 0.93);
-  width: 12rem;
+  width: 40rem;
+  opacity: 0.45;
 }
 @keyframes App-logo-spin {
   from {
@@ -75,12 +88,9 @@
     transform: rotateY(360deg);
   }
 }
-
 /**********************************\
 /          *** Main Content ***     \ 
 /************************************/
-.main {
-}
 aside {
   transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
   transform: translate3d(-170vw, 0, 0);

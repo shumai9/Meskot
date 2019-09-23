@@ -19,15 +19,15 @@ class Contact extends React.Component {
           return <p key={j}> Tel: {text}</p>;
         })}
         <h5>Profile links:</h5>
-        {links.map((text, k) => {
-          return (
-            <div id="links" key={k}>
-              <a href={`${text}`} target="_blank">
+        <div id="links">
+          {links.map((text, k) => {
+            return (
+              <a href={`${text}`} target="_blank" rel="noreferrer" key={k}>
                 <img className="icon" src={url[k]} alt={`${name[k]}`} />
               </a>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     );
   }
