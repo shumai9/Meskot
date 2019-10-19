@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/home.css';
+import Carasole from './caro';
 
 class Home extends React.Component {
   constructor(props) {
@@ -7,11 +8,6 @@ class Home extends React.Component {
     this.state = {
       loaded: false,
       bucket: ''
-    };
-    this.writer = data => {
-      for (let i = 0; i < data.length; i++) {
-        return <p>{data[i]}</p>;
-      }
     };
   }
 
@@ -35,6 +31,7 @@ class Home extends React.Component {
             );
           })}
         </div>
+        <Carasole url={url} />
         <h4>A photo is more than a 1000 words</h4>
         <div className="img-container">
           {url.map((text, l) => {
