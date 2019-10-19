@@ -1,5 +1,5 @@
 import React from 'react';
-//reciving an arr of urls
+
 class Carasole extends React.Component {
   constructor(props) {
     super(props);
@@ -8,12 +8,8 @@ class Carasole extends React.Component {
       currentIndex: 0
     };
   }
-
-  displayImg = urlIndex => {
-    this.setState({
-      photo: this.props.url[urlIndex],
-      currentIndex: this.props.url.findIndex(urlIndex)
-    });
+  displayImg = () => {
+    this.slideRight();
   };
   slideLeft = n => {
     if (this.state.currentIndex > 0) {
@@ -30,22 +26,27 @@ class Carasole extends React.Component {
         currentIndex: this.state.currentIndex + 1,
         photo: this.props.url[this.state.currentIndex + 1]
       });
+    } else {
+      this.setState({
+        currentIndex: 0
+      });
     }
   };
+  componentDidMount() {
+    window.setInterval(this.displayImg, 3000);
+  }
   render() {
-    console.log('Nothing here', this.state.currentIndex, this.props.url.length);
     return (
-      <div className="caro">
-        <button onClick={this.slideLeft} className="left btn">
-          Left
-        </button>
+      <div className="caro fade">
+        <a onClick={this.slideLeft} className="left arrow">
+          &#10094;
+        </a>
+        <a onClick={this.slideRight} className="right arrow">
+          &#10095;
+        </a>
         <img className="masawino" src={this.state.photo} alt={'caro'} />
-        <button onClick={this.slideRight} className="right btn">
-          Right
-        </button>
       </div>
     );
   }
 }
-
 export default Carasole;

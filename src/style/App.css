@@ -134,7 +134,7 @@ aside {
   box-shadow: var(--app-shadow);
   overflow: hidden;
 }
-.img-container {
+/* .img-container {
   align-items: center;
   display: grid;
   max-width: 100%;
@@ -142,7 +142,7 @@ aside {
   grid-template-rows: repeat(3, auto);
   grid-gap: 15px 15px;
   padding: 15px;
-}
+} */
 img.badge {
   position: absolute;
   left: 0;

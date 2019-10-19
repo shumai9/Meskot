@@ -10,7 +10,6 @@ class Home extends React.Component {
       bucket: ''
     };
   }
-
   render() {
     const title = this.props.data.intro;
     const body = this.props.data.body;
@@ -32,12 +31,6 @@ class Home extends React.Component {
           })}
         </div>
         <Carasole url={url} />
-        <h4>A photo is more than a 1000 words</h4>
-        <div className="img-container">
-          {url.map((text, l) => {
-            return <img className="masawino" src={text} key={l} alt={`${l}`} />;
-          })}
-        </div>
         {idea.map((text, k) => {
           return <p key={k}>{text}</p>;
         })}

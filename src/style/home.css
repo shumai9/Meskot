@@ -1,6 +1,41 @@
 .caro {
-  display: flex;
+  position: relative;
+  margin: auto;
 }
-.btn {
-  width: 7rem;
+a.right.arrow,
+a.left.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  padding: 0;
+  margin: 0;
+  width: 3rem;
 }
+a.right.arrow {
+  right: 0rem;
+  padding-left: 1rem;
+  border-radius: 3px 0 0 3px;
+}
+a.left.arrow {
+  left: 0rem;
+  padding-left: 1rem;
+  border-radius: 0 3px 3px 0;
+}
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* .caro {
+  opacity: 0.5;
+  position: absolute;
+  margin: auto;
+  width: 98vw;
+  left: -10rem;
+  top: -41rem;
+  height: 100vh;
+  overflow: hidden;
+} */
